@@ -10,41 +10,39 @@ const App = ({ children }) => (
   <div>
     <h1>APP!</h1>
     <ul className="nav nav-tabs">
-      <li><IndexLink to="/"           activeStyle={ACTIVE}>Список заявок</IndexLink></li>
-
-      <li><Link      to="/users"      activeStyle={ACTIVE}>Чат</Link></li>
-     
-      <li><Link      to="/about"      activeStyle={ACTIVE}>Новая заявка</Link></li>
+      <li><IndexLink     to="/"            activeStyle={ACTIVE}>Список заявок</IndexLink></li>
+      <li><Link          to="/chat"        activeStyle={ACTIVE}>Чат</Link></li>
+      <li><Link          to="/newbid"      activeStyle={ACTIVE}>Новая заявка</Link></li>
     </ul>
 
     {children}
   </div>
 )
 
-const Index = () => (
+const Listofbids = () => (
   <div>
-    <h2>Index!</h2>
+    <h2>Заявки</h2>
   </div>
 )
 
-const Users = () => (
+const Chat = () => (
   <div>
-    <h2>Users</h2>
+    <h2>Чат</h2>
 </div>
 )
 
-const About = () => (
+const Newbid = () => (
   <div>
-    <h2>About</h2>
+    <h2>Новая заявка</h2>
   </div>
 )
 
 render((
   <Router history={withExampleBasename(browserHistory, __dirname)}>
     <Route path="/" component={App}>
-      <IndexRoute component={Index}/>
-      <Route path="/about" component={About}/>
-      <Route path="users" component={Users}>
+      <IndexRoute component={Listofbids}/>
+      <Route path="/newbid" component={Newbid}/>
+      <Route path="chat" component={Chat}>
       </Route>
     </Route>
   </Router>
