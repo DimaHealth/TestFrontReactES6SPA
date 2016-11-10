@@ -9,9 +9,7 @@ module.exports = {
   devtool: 'inline-source-map',
 
 /*    entry: "./entry",
-    output: {
-        path: __dirname + "/dist",
-        filename: "bundle.js"
+         filename: "bundle.js"
     }
 */
   entry: fs.readdirSync(__dirname).reduce(function (entries, dir) {
