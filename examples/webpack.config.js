@@ -8,6 +8,12 @@ module.exports = {
 
   devtool: 'inline-source-map',
 
+/*    entry: "./entry",
+    output: {
+        path: __dirname + "/dist",
+        filename: "bundle.js"
+    }
+*/
   entry: fs.readdirSync(__dirname).reduce(function (entries, dir) {
     if (fs.statSync(path.join(__dirname, dir)).isDirectory())
       entries[dir] = path.join(__dirname, dir, 'app.js')
