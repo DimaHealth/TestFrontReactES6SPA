@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router'
+import Form from './modules/sendmessage'
 
 const ACTIVE = { color: 'red' }
 
@@ -24,9 +25,9 @@ const Listofbids = () => (
 )
 
 const Chat = () => (
-  <div>
-    <h2>Чат</h2>
-</div>
+  <div id='send-message_form'>
+    <Form />
+  </div>
 )
 
 const Newbid = () => (

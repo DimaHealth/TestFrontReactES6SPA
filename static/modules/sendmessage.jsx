@@ -35,6 +35,5 @@ class Form extends React.Component {
 		);
 	}
 }
-ReactDOM.render(
-<Form />, document.getElementById('send-message_form'));
+
 export default Form;
