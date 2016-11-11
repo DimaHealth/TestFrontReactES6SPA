@@ -1,38 +1,55 @@
-const webpack = require('webpack')
+webpack = require('webpack');
+path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports = {
 
-  output: {
-    library: 'ReactRouter',
-    libraryTarget: 'umd'
-  },
-
-  externals: [
-    {
-      react: {
-        root: 'React',
-        commonjs2: 'react',
-        commonjs: 'react',
-        amd: 'react'
-      }
-    }
-  ],
-
-  module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel' }
+webpackConfig = {
+    context: __dirname,
+    entry: {
+        bundle: './static/app.js',
+        styles: './static/main.scss'
+    },
+    output: {
+        path: './static/build',
+        filename: '[name].js',
+        library: '[name]'
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
+    devtool: '#cheap-module-source-map',
+    module: {
+        loaders: [
+            {
+                test: /\.jsx?$/,
+                exclude: [/node_modules/],
+                loader: "babel-loader",
+                query: {
+                    presets: ['es2015', 'react', 'stage-0', 'stage-1']
+                }
+            },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!resolve-url!sass-loader?sourceMap')
+            },
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+            },
+            {
+                test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.png|\.jpe?g|\.gif$/,
+                loader: 'file-loader'
+            }
+        ]
+    },
+    plugins: [
+        new ExtractTextPlugin('styles.css', {
+            allChunks: true
+        })
     ]
-  },
-
-  node: {
-    Buffer: false
-  },
-
-  plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
-  ]
-
-}
+//  devServer: {
+//    historyApiFallback: true,
+//    inline: true
+//  }
+};
+module.exports = webpackConfig;
