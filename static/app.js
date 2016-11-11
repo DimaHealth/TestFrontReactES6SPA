@@ -10,9 +10,9 @@ const App = ({ children }) => (
   <div>
     <h1>APP!</h1>
     <ul className="nav nav-tabs">
-      <li><IndexLink     to="/"            activeStyle={ACTIVE}>Список заявок</IndexLink></li>
-      <li><Link          to="/chat"        activeStyle={ACTIVE}>Чат</Link></li>
-      <li><Link          to="/newbid"      activeStyle={ACTIVE}>Новая заявка</Link></li>
+      <li><Link to="listofbids" activeStyle={ACTIVE}>Список заявок</Link></li>
+      <li><Link to="chat"       activeStyle={ACTIVE}>Чат</Link></li>
+      <li><Link to="newbid"     activeStyle={ACTIVE}>Новая заявка</Link></li>
     </ul>
 
     {children}
@@ -38,12 +38,11 @@ const Newbid = () => (
 )
 
 render((
-  <Router history={withExampleBasename(browserHistory, __dirname)}>
+  <Router history={browserHistory/*withExampleBasename(browserHistory, __dirname)*/}>
     <Route path="/" component={App}>
-      <IndexRoute component={Listofbids}/>
-      <Route path="/newbid" component={Newbid}/>
-      <Route path="chat" component={Chat}>
-      </Route>
+      <Route path="newbid" component={Newbid}/>
+      <Route path="chat" component={Chat}/>
+      <Route path="listofbids" component={Listofbids}/>
     </Route>
   </Router>
 ), document.getElementById('example'))
