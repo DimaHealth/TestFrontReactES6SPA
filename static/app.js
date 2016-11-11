@@ -2,8 +2,6 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router'
 
-import withExampleBasename from '../withExampleBasename'
-
 const ACTIVE = { color: 'red' }
 
 const App = ({ children }) => (
@@ -38,7 +36,7 @@ const Newbid = () => (
 )
 
 render((
-  <Router history={browserHistory/*withExampleBasename(browserHistory, __dirname)*/}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}>
       <Route path="newbid" component={Newbid}/>
       <Route path="chat" component={Chat}/>
