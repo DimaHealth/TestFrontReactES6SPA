@@ -7,7 +7,7 @@ webpackConfig = {
     context: __dirname,
     entry: {
         bundle: './static/app.js',
-        styles: './static/main.scss'
+        styles: ['./static/main.scss','./static/newbid.scss']
     },
     output: {
         path: './static/build',
@@ -29,7 +29,7 @@ webpackConfig = {
                 }
             },
             {
-                test: /\.scss$/,
+                test: /\.scss?$/,
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader!resolve-url!sass-loader?sourceMap')
             },
             {
