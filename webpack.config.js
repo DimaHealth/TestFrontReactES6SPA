@@ -7,7 +7,7 @@ webpackConfig = {
     context: __dirname,
     entry: {
         bundle: './static/app.js',
-        styles: ['./static/main.scss','./static/newbid.scss']
+        styles: ['./static/main.scss', './static/newbid.scss']
     },
     output: {
         path: './static/build',
@@ -19,8 +19,7 @@ webpackConfig = {
     },
     devtool: '#cheap-module-source-map',
     module: {
-        loaders: [
-            {
+        loaders: [{
                 test: /\.jsx?$/,
                 exclude: [/node_modules/],
                 loader: "babel-loader",
@@ -43,13 +42,13 @@ webpackConfig = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('styles.css', {
-            allChunks: true
-        })
-    ]
-//  devServer: {
-//    historyApiFallback: true,
-//    inline: true
-//  }
+            new ExtractTextPlugin('styles.css', {
+                allChunks: true
+            })
+        ]
+        //  devServer: {
+        //    historyApiFallback: true,
+        //    inline: true
+        //  }
 };
 module.exports = webpackConfig;
