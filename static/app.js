@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router'
 import Form from './modules/sendmessage'
-
+import Newbidka from './modules/newbid'
 const ACTIVE = { color: 'red' }
 
 const App = ({ children }) => (
@@ -31,8 +31,8 @@ const Chat = () => (
 )
 
 const Newbid = () => (
-  <div>
-    <h2>Новая заявка</h2>
+  <div id='new-bid_form'>
+    <Newbidka />
   </div>
 )
 
