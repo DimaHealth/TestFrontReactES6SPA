@@ -67,7 +67,7 @@ class Newbidka extends React.Component {
                         </div>
                         <div className="rightColumn-whattoDo_uploadPhoto">
                             <p className="rightColumn-whattoDo_uploadPhotoBut">
-                                <button className="whattoDo-uploadPhotoBut-uploadButTitle" type="file">Загрузить фото</button>
+                                <input className="whattoDo-uploadPhotoBut-uploadButTitle" type="file"/>
                             </p>
                         </div>
                     </div>
