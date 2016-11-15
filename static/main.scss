@@ -130,19 +130,19 @@ body {
 }
 
 .listBidCarcas {
-    width: 50%;
+    width: 90%;
     height: auto;
     border: 1px solid #000;
     padding: 5px;
     margin: 0 auto;
 }
 
-.listBidCarcas-filterTable {
+.filterTable {
     border: 1px solid #000;
     margin-bottom: 25px;
 }
 
-.responseButton {
+.row-column_responseButton {
     background-color: transparent;
     border: 1px solid #000;
     margin-top: 15px;
@@ -153,6 +153,15 @@ body {
 
 .listBidCarcas-bidTable {
     margin: 0 auto;
+}
+
+.listBidCarcas-bidTable tr,
+td {
+    border: 1px solid #000;
+}
+
+.listBidCarcas-bidTable {
+    border: 1px solid #000;
 }
 
 .listBidCarcas-bidTable_headTable {
