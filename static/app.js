@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router'
 import Form from './modules/sendmessage'
 import Newbidka from './modules/newbid'
+import BidkiList from './modules/bidslist'
 const ACTIVE = { color: 'red' }
 
 const App = ({ children }) => (
@@ -19,8 +20,8 @@ const App = ({ children }) => (
 )
 
 const Listofbids = () => (
-  <div>
-    <h2>Заявки</h2>
+  <div id = 'bid-list_form' >
+    <BidkiList />
   </div>
 )
 
