@@ -1,10 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Bidcolright from './Newbidrc/newbidcolright'
-import Bidcolleft from './Newbidlc/newbidcolleft'
 
-
-class Newbidka extends React.Component {
+class Modinfo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -15,7 +12,7 @@ class Newbidka extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange() {
+    handleChange(event) {
         this.setState({ value: event.target.value });
     }
     handleSubmit(event) {
@@ -25,12 +22,15 @@ class Newbidka extends React.Component {
     }
     render() {
         return (
-            <div className="carcasnb">
-                 <Bidcolleft/>
-                 <Bidcolright/>
-            </div>
+                <div className="rightColumn-markModYear_modInfo">
+                            <select>
+                                <option value="">One-77</option>
+                                <option value="">M6</option>
+                                <option value="">Sprinter</option>
+                            </select>
+                        </div>
+                        
         );
     }
 }
-
-export default Newbidka;
+export default Modinfo;

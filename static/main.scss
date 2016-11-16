@@ -80,14 +80,15 @@ body {
     width: 70%;
 }
 
-.calculator-body {
-    width: 30%;
-    float: left;
+.input-calculator_form {
+    margin-top: -50px;
+    width: 300px;
+    border: 1px solid black;
 }
 
-.calculator-body td {
-    border: .7px solid black;
-    height: 28px;
+.calculator-body {
+    width: 50%;
+    margin-top: -150px;
 }
 
 .calcInput {
@@ -97,7 +98,11 @@ body {
 .calculator-and-chatTextarea {
     width: 62.5%;
     margin-left: 38%;
-    margin-top: -13%;
+    margin-top: -20%;
+}
+
+.go {
+    margin-left: 585px;
 }
 
 .resultRow input {

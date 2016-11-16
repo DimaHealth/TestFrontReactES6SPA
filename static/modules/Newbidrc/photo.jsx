@@ -1,10 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Bidcolright from './Newbidrc/newbidcolright'
-import Bidcolleft from './Newbidlc/newbidcolleft'
 
-
-class Newbidka extends React.Component {
+class Photo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -15,7 +12,7 @@ class Newbidka extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange() {
+    handleChange(event) {
         this.setState({ value: event.target.value });
     }
     handleSubmit(event) {
@@ -25,12 +22,12 @@ class Newbidka extends React.Component {
     }
     render() {
         return (
-            <div className="carcasnb">
-                 <Bidcolleft/>
-                 <Bidcolright/>
-            </div>
+              <div className="rightColumn-whattoDo_photo">
+                        <p className="rightColumn-whattoDo_photoInfo">Вы можете добавить несколько фотографий это поможет автосервису точнее определить стоимость работ</p>
+                    </div>
+                  
+                        
         );
     }
 }
-
-export default Newbidka;
+export default Photo;
