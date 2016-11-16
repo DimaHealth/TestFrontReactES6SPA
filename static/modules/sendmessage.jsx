@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import Tabs from './tabs'
 import Infotable from './infotable'
 import Chatform from './chatform'
-
+import Calculator from './calculator'
 class Form extends React.Component {
 	render() {
 		return (
@@ -19,9 +19,8 @@ class Form extends React.Component {
                 </div>
             </div>
             <div className="calculator-and-chatTextarea">
+                <Calculator />
                 <Chatform />
-                <div id="send-message_form">
-                </div>
             </div>
         </div>
    </div>
