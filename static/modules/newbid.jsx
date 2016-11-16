@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Bidcolright from './newbidcolright'
-import Bidcolleft from './newbidcolleft'
+import Bidcolright from './Newbidrc/newbidcolright'
+import Bidcolleft from './Newbidlc/newbidcolleft'
+
 
 class Newbidka extends React.Component {
     constructor(props) {
