@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Calculator from './calculator'
 
 class Chatform extends React.Component {
 	constructor(props) {
@@ -29,6 +30,7 @@ class Chatform extends React.Component {
 		Поехали
 		</button>
         {this.state.message.map((message, id) => <p key={id} className="sweet">{message}</p>)}
+		<Calculator />
 		</div>
 		
 		);

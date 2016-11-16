@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 class Calculator extends React.Component {
     render() {
         return(
-            <div>
+            <div className = "calculator-body">
             <input  className="inp" name="remontSum"  />
             <input  className="inp" name="remontProc" />
             <br/> <span> Сумма: <span className="remontResult"></span></span>
