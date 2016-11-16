@@ -20,10 +20,10 @@ class Form extends React.Component {
                 </div>
             </div>
             <div className="calculator-and-chatTextarea">
-<<<<<<< HEAD
+
                 <Calculator />
                 <Chatform />
-=======
+
                 <table className="calculator-body">
                     <tr>
                         <td>
@@ -57,7 +57,6 @@ class Form extends React.Component {
                         <td className="resultRow"> <input className = "calcInput" type="number" /> </td>
                     </tr>
                 </table>
->>>>>>> origin/master
                 <div id="send-message_form">
                 </div>
             </div>
