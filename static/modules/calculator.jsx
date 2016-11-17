@@ -51,10 +51,10 @@ class Calculator extends React.Component {
      else {
        b=this.state.sp;
      };
-     let c=(a+b);
+     let c=parseFloat(a)+parseFloat(b);
     return(
       <div className = "calculator-body">
-        <CalcInput  className="inp" value={this.state.fp} onChange={this.handleFixPriceChange} />
+        <CalcInput  className="inp" placeholder='0' value={this.state.fp} onChange={this.handleFixPriceChange} />
         <CalcInput  className="inp" value={this.state.fd} onChange={this.handleFixDiscountChange} />
         <br/> <span> Сумма: {a}<span className="remontResult"></span></span>
         <br/>
