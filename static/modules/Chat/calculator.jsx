@@ -32,6 +32,9 @@ class Calculator extends React.Component {
   }
 
   handleSparesDiscountChange(sd) {
+    if (sd>100){
+      sd=100;
+    }
     this.setState({sd});
   }
 
