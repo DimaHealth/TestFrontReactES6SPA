@@ -6,22 +6,6 @@ import CalcInput from './calcinput'
 
 
 class Calculator extends React.Component {
-<<<<<<< HEAD
-    render() {
-        return(
-            <div className = "calculator-body">
-            <input  className="inp" name="remontSum"  />
-            <input  className="inp" name="remontProc" />
-            <br/> <span> Сумма: <span className="remontResult"></span></span>
-            <br/>
-            <input  className="inp" name="zapchastSum"/>
-            <input  className="inp" name="zapchastProc"/>
-            <br/> <span>Сумма: <span className="zapchastResult"></span></span>
-            <br/> <span>
-            Итого: <span className="mainResult" name = "mResult"></span>
-            </span>
-            </div>
-=======
    constructor(props) {
     super(props);
     this.handleFixPriceChange = this.handleFixPriceChange.bind(this);
@@ -81,7 +65,6 @@ class Calculator extends React.Component {
          Итого: {c}<span className="mainResult"></span>
          </span>
       </div>
->>>>>>> origin/master
         );
     }
 }
