@@ -38,7 +38,7 @@ const Newbid = () => (
 )
 
 render((
-  <Router history={browserHistory}>
+    <Router history={browserHistory}>
     <Route path="/" component={App}>
       <Route path="newbid" component={Newbid}/>
       <Route path="chat" component={Chat}/>

@@ -13,7 +13,7 @@ class Calculator extends React.Component {
             <input  className="inp" name="zapchastProc"/>
             <br/> <span>Сумма: <span className="zapchastResult"></span></span>
             <br/> <span>
-            Итого: <span className="mainResult" name = "maResult"></span>
+            Итого: <span className="mainResult" name = "mResult"></span>
             </span>
             </div>
         );
