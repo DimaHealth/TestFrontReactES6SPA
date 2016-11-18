@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Tabs from './tabs'
-import Infotable from './infotable'
-import Chatform from './chatform'
-import Calculator from './calculator'
+import Tabs from './Chat/tabs'
+import Infotable from './Chat/infotable'
+import Chatform from './Chat/chatform'
+import Calculator from './Chat/calculator'
 class Form extends React.Component {
 	render() {
 		return (

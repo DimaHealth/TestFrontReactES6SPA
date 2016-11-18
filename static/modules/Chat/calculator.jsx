@@ -38,8 +38,8 @@ class Calculator extends React.Component {
  render() {
      let a;
      let b;
-     a = Number(this.state.fp*((100-this.state.fd)/100));
-     b = Number(this.state.sp*((100-this.state.sd)/100));
+     a = Math.round(this.state.fp*((100-this.state.fd)/100));
+     b = Math.round(this.state.sp*((100-this.state.sd)/100));
      let c = Number(a) + Number(b);
     return(
       <div className = "calculator-body">
