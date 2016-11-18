@@ -2,34 +2,24 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 class BidRow extends React.Component {
-  constructor(props){
-        super(props);
-        this.state = {
-            bid = 
-        }
-        this.handleChange = this.handleChange.bind(this);
-		this.handleSubmit = this.handleSubmit.bind(this);
-    }    
-    handleChange(){
-        this.
-    }
+  
     render() {
         return (
                 <tr className="table-row">
                     <td className="table-row_column">
-                        {this.state.number}
+                        {this.props.number}
                     </td>
                     <td className="table-row_column">
-                        {this.state.date}
+                        {this.props.date}
                     </td>
                     <td className="table-row_column">
-                        {this.state.car}
+                        {this.props.car}
                     </td>
                     <td className="table-row_column">
-                        {this.state.desc}
+                        {this.props.desc}
                     </td>
                     <td className="table-row_column">
-                        {this.state.message}
+                        {this.props.message}
                     </td>
                     <td className="table-row_column">
                         <button className="row-column_responseButton" type="submit">Ответить</button>
