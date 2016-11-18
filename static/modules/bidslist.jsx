@@ -21,10 +21,10 @@ class BidkiList extends React.Component {
     render() {
         return(
             <div className="listBidCarcas">
-        <Filtertable />
-        <Bidtable />
+                <Filtertable />
+                <Bidtable />
         
-      </div>
+            </div>
         );
     }  
 }
