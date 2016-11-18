@@ -23,6 +23,7 @@ class BidkiList extends React.Component {
             <div className="listBidCarcas">
         <Filtertable />
         <Bidtable />
+        
       </div>
         );
     }  

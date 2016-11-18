@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --colors --progress"
+    "start": "webpack-dev-server --hot --inline --colors --progress --history-api-fallback"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",

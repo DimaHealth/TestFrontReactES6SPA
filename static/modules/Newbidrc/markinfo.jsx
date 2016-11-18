@@ -1,6 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// const order = {
+    
+//     title: 'Fresh fruits package',
+//     image: 'http://images.all-free-download.com/images/graphiclarge/citrus_fruit_184416.jpg',
+//     initialQty: 3,
+//     price: 8
+// };
+
+
+
 class Markinfo extends React.Component {
     constructor(props) {
         super(props);
@@ -24,7 +34,7 @@ class Markinfo extends React.Component {
         return (
              <div className="rightColumn-markModYear_markInfo">
                             <select>
-                                <option value="">Aston Martin</option>
+                                <option value="">Acton Martin</option>
                                 <option value="">BMW</option>
                                 <option value="">Mercedes</option>
                             </select>
