@@ -9,7 +9,12 @@ class CalcInput extends React.Component {
   }
 
   handleChange(e) {
-    this.props.onChange(e.target.value);
+    if ((!e.target.value.match(/[^0-9]/g)) & (e.target.value.length < 9)){
+      if (e.target.value==""){
+        e.target.value=0;
+      }
+    this.props.onChange(Number(e.target.value));
+    }
   }
 
   render() {

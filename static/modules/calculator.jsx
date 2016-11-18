@@ -16,15 +16,15 @@ class Calculator extends React.Component {
   }
 
   handleFixPriceChange(fp) {
-    //   let fd=this.state.fd;
-    //   let sp=this.state.sp;
-    //   let sd=this.state.sd;
     this.setState({fp});
    
   }
 
   handleFixDiscountChange(fd) {
-    this.setState({fd});
+    if (fd>100){
+      fd=100;
+    }
+      this.setState({fd});
   }
  
   handleSparesPriceChange(sp) {
@@ -38,31 +38,20 @@ class Calculator extends React.Component {
  render() {
      let a;
      let b;
-     if (this.state.fd != 0){
-       a = this.state.fp*((100-this.state.fd)/100);
-     }
-     else {
-       a=this.state.fp;
-     };
-
-     if (this.state.sd != 0){
-       b = this.state.sp*((100-this.state.sd)/100);
-     }
-     else {
-       b=this.state.sp;
-     };
-     let c=parseFloat(a)+parseFloat(b);
+     a = Number(this.state.fp*((100-this.state.fd)/100));
+     b = Number(this.state.sp*((100-this.state.sd)/100));
+     let c = Number(a) + Number(b);
     return(
       <div className = "calculator-body">
-        <CalcInput  className="inp" placeholder='0' value={this.state.fp} onChange={this.handleFixPriceChange} />
+        <CalcInput  className="inp" value={this.state.fp} maxlength="8" onChange={this.handleFixPriceChange} />
         <CalcInput  className="inp" value={this.state.fd} onChange={this.handleFixDiscountChange} />
-        <br/> <span> Сумма: {a}<span className="remontResult"></span></span>
+        <br/><span> Сумма: {a} руб.<span className="remontResult"></span></span>
         <br/>
         <CalcInput  className="inp" value={this.state.sp} onChange={this.handleSparesPriceChange} />
         <CalcInput  className="inp" value={this.state.sd} onChange={this.handleSparesDiscountChange}/>
-        <br/> <span>Сумма: {b}<span className="zapchastResult"></span></span>
-        <br/> <span>
-         Итого: {c}<span className="mainResult"></span>
+        <br/><span>Сумма: {b} руб.<span className="zapchastResult"></span></span>
+        <br/><span>
+         Итого: {c} руб.<span className="mainResult"></span>
          </span>
       </div>
         );
