@@ -47,11 +47,11 @@ class Calculator extends React.Component {
     return(
       <div className = "calculator-body">
         <CalcInput  className="inp" value={this.state.fp} maxlength="8" onChange={this.handleFixPriceChange} />
-        <CalcInput  className="inp" value={this.state.fd} onChange={this.handleFixDiscountChange} />
+        <CalcInput  className="inp" value={this.state.fd} maxlength="3" onChange={this.handleFixDiscountChange} />
         <br/><span> Сумма: {a} руб.<span className="remontResult"></span></span>
         <br/>
-        <CalcInput  className="inp" value={this.state.sp} onChange={this.handleSparesPriceChange} />
-        <CalcInput  className="inp" value={this.state.sd} onChange={this.handleSparesDiscountChange}/>
+        <CalcInput  className="inp" value={this.state.sp} maxlength="8" onChange={this.handleSparesPriceChange} />
+        <CalcInput  className="inp" value={this.state.sd} maxlength="3" onChange={this.handleSparesDiscountChange}/>
         <br/><span>Сумма: {b} руб.<span className="zapchastResult"></span></span>
         <br/><span>
          Итого: {c} руб.<span className="mainResult"></span>

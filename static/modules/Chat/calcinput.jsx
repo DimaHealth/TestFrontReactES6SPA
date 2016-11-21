@@ -9,7 +9,7 @@ class CalcInput extends React.Component {
   }
 
   handleChange(e) {
-    if ((!e.target.value.match(/[^0-9]/g)) & (e.target.value.length < 9)){
+    if (!e.target.value.match(/[^0-9]/g)){
       if (e.target.value==""){
         e.target.value=0;
       }
@@ -19,8 +19,10 @@ class CalcInput extends React.Component {
 
   render() {
     const value = this.props.value;
+    const maxlength = this.props.maxlength;
     return (
         <input value={value}
+               maxLength={maxlength}
                onChange={this.handleChange} />
     );
   }
