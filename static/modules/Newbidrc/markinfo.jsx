@@ -26,9 +26,8 @@ class Markinfo extends React.Component {
 $(function(){
     $.getJSON('./static/json/auto brands.json', function(data) {
                 $.each(data, function(key, val) {
-                    $('#countries').append('<option value="' + val + '">' + key + '</option>');
-         console.log(data);
-               });
+                    $('#marka').append('<option value="' + val.id + '">' + val.name + '</option>');
+            });
     });
 });
         let x = $.getJSON('./static/json/auto brands.json');
@@ -49,10 +48,7 @@ $(function(){
     render() {
         return (
              <div className="rightColumn-markModYear_markInfo">
-                            <select>
-                                <option value="">Acton Martin</option>
-                                <option value="">BMW</option>
-                                <option value="">Mercedes</option>
+                            <select id ='marka'>
                             </select>
                         </div>
         );
