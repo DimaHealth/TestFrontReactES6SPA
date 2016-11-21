@@ -1,0 +1,740 @@
+[
+    {
+        "id": 46,
+        "name": "Acura",
+        "status": 0,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 47,
+        "name": "Alfa Romeo",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 54,
+        "name": "Aston Martin",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 1,
+        "name": "Audi",
+        "status": 1,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 59,
+        "name": "Bentley",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 2,
+        "name": "BMW",
+        "status": 1,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 63,
+        "name": "Brilliance",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 66,
+        "name": "Bugatti",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 67,
+        "name": "Buick",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 68,
+        "name": "BYD",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 3,
+        "name": "Cadillac",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 4,
+        "name": "Chery",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 5,
+        "name": "Chevrolet",
+        "status": 1,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 6,
+        "name": "Chrysler",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 7,
+        "name": "Citroen",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 8,
+        "name": "Daewoo",
+        "status": 0,
+        "country_id": 4,
+        "country_sng": 0,
+        "country_name": "\u041a\u043e\u0440\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 79,
+        "name": "DAF",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 83,
+        "name": "Datsun",
+        "status": 0,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 9,
+        "name": "Dodge",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 95,
+        "name": "Ferrari",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 10,
+        "name": "Fiat",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 11,
+        "name": "Ford",
+        "status": 1,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 97,
+        "name": "Foton",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 100,
+        "name": "Geely",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 102,
+        "name": "GMC",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 12,
+        "name": "Great Wall",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 106,
+        "name": "Haima",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 13,
+        "name": "Honda",
+        "status": 1,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 112,
+        "name": "Hummer",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 14,
+        "name": "Hyundai",
+        "status": 1,
+        "country_id": 4,
+        "country_sng": 0,
+        "country_name": "\u041a\u043e\u0440\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 15,
+        "name": "Infiniti",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 117,
+        "name": "Isuzu",
+        "status": 0,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 118,
+        "name": "IVECO",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 16,
+        "name": "Jaguar",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 17,
+        "name": "Jeep",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 18,
+        "name": "Kia",
+        "status": 1,
+        "country_id": 4,
+        "country_sng": 0,
+        "country_name": "\u041a\u043e\u0440\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 124,
+        "name": "Lamborghini",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 125,
+        "name": "Lancia",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 19,
+        "name": "Land Rover",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 20,
+        "name": "Lexus",
+        "status": 1,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 21,
+        "name": "Lifan",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 128,
+        "name": "Lincoln",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 137,
+        "name": "Maserati",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 138,
+        "name": "Maybach",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 22,
+        "name": "Mazda",
+        "status": 1,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 23,
+        "name": "Mercedes-Benz",
+        "status": 1,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 141,
+        "name": "Mercury",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 24,
+        "name": "Mini",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 25,
+        "name": "Mitsubishi",
+        "status": 1,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 217,
+        "name": "MyMark",
+        "status": 0,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 26,
+        "name": "Nissan",
+        "status": 1,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 150,
+        "name": "Oldsmobile",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 27,
+        "name": "Opel",
+        "status": 1,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 28,
+        "name": "Peugeot",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 157,
+        "name": "Plymouth",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 158,
+        "name": "Pontiac",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 29,
+        "name": "Porsche",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 30,
+        "name": "Renault",
+        "status": 1,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 168,
+        "name": "Rolls-Royce",
+        "status": 0,
+        "country_id": 2,
+        "country_sng": 0,
+        "country_name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 170,
+        "name": "Rover",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 31,
+        "name": "Saab",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 32,
+        "name": "SEAT",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 33,
+        "name": "Skoda",
+        "status": 1,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 176,
+        "name": "Smart",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 34,
+        "name": "Ssang Yong",
+        "status": 0,
+        "country_id": 4,
+        "country_sng": 0,
+        "country_name": "\u041a\u043e\u0440\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 35,
+        "name": "Subaru",
+        "status": 0,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 36,
+        "name": "Suzuki",
+        "status": 0,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 185,
+        "name": "Tesla",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 37,
+        "name": "Toyota",
+        "status": 1,
+        "country_id": 3,
+        "country_sng": 0,
+        "country_name": "\u042f\u043f\u043e\u043d\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 190,
+        "name": "Tramontana",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 38,
+        "name": "Volkswagen",
+        "status": 1,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 39,
+        "name": "Volvo",
+        "status": 0,
+        "country_id": 1,
+        "country_sng": 0,
+        "country_name": "\u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 197,
+        "name": "Vortex",
+        "status": 0,
+        "country_id": 5,
+        "country_sng": 0,
+        "country_name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0435",
+        "selected": false
+    },
+    {
+        "id": 40,
+        "name": "\u0412\u0410\u0417",
+        "status": 1,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    },
+    {
+        "id": 41,
+        "name": "\u0413\u0410\u0417",
+        "status": 0,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    },
+    {
+        "id": 42,
+        "name": "\u0417\u0410\u0417",
+        "status": 0,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    },
+    {
+        "id": 209,
+        "name": "\u0417\u0418\u041b",
+        "status": 0,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    },
+    {
+        "id": 210,
+        "name": "\u0418\u0416",
+        "status": 0,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    },
+    {
+        "id": 211,
+        "name": "\u041a\u0430\u043c\u0410\u0417",
+        "status": 0,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    },
+    {
+        "id": 214,
+        "name": "\u041c\u043e\u0441\u043a\u0432\u0438\u0447",
+        "status": 0,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    },
+    {
+        "id": 43,
+        "name": "\u0422\u0430\u0433\u0410\u0417",
+        "status": 0,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    },
+    {
+        "id": 44,
+        "name": "\u0423\u0410\u0417",
+        "status": 0,
+        "country_id": 6,
+        "country_sng": 1,
+        "country_name": "\u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435",
+        "selected": false
+    }
+]
