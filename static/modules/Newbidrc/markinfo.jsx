@@ -23,10 +23,18 @@ class Markinfo extends React.Component {
     }
 
     componentDidMount(){
-        let x = $.get('./static/json/auto brands.json');
+$(function(){
+    $.getJSON('./static/json/auto brands.json', function(data) {
+                $.each(data, function(key, val) {
+                    $('#countries').append('<option value="' + val + '">' + key + '</option>');
+         console.log(data);
+               });
+    });
+});
+        let x = $.getJSON('./static/json/auto brands.json');
         console.log(x);
-        console.log(x.respomseText);
-        this.setState( x) ;
+        console.log(data);
+        this.setState( x ) ;
  
     }
 
