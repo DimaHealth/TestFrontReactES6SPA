@@ -24,7 +24,7 @@ class UploadPhoto extends React.Component {
         return (
                  <div className="rightColumn-whattoDo_uploadPhoto">
                         <p className="rightColumn-whattoDo_uploadPhotoBut">
-                            <input className="whattoDo-uploadPhotoBut-uploadButTitle" type="file" />
+                            <input className="whattoDo-uploadPhotoBut-uploadButTitle" type="file"  name="photo" multiple accept="image/*"/>
                         </p>
                     </div>
                         
