@@ -14,39 +14,52 @@ import ReactDOM from 'react-dom'
 class Markinfo extends React.Component {
     constructor(props) {
         super(props);
-       // this.state = {
-        //     value: '',
-        //     message: []
-        // };
+        this.state = {data: []};
         // this.handleChange = this.handleChange.bind(this);
         // this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     componentDidMount(){
-$(function(){
-    $.getJSON('./static/json/auto brands.json', function(data) {
-                $.each(data, function(key, val) {
-                    $('#marka').append('<option value="' + val.id + '">' + val.name + '</option>');
-            });
-    });
-});
-        let x = $.getJSON('./static/json/auto brands.json');
-        console.log(x);
-        console.log(data);
-        this.setState( x ) ;
+//        if (this.state.url==''){
+//            this.setState({url:'./static/json/auto brands.json'});
+//        }
+//        else if (){
+
+//        }
+//        let x = JSON.parse($.getJSON('./static/json/auto brands.json'));
+//        console.log(data);
+//        this.setState( x ) ;
  
+         $.getJSON(this.props.url, function(data) {this.setState({data: data})}.bind(this));
+        
+        // console.log(this.state.data);
     }
 
     // handleChange(event) {
-    //     this.setState({ value: event.target.value });
+    //      this.setState({ value: event.target.value });
     // }
-    // handleSubmit(event) {
+    // // handleSubmit(event) {
     //     let {message, value} = this.state;
     //     message.push(value);
     //     this.setState({ message, value: '' });
     // }
     render() {
-        return (
+        let url = this.props.url;
+//         $.getJSON(this.props.url, function(data) {this.setState({data: data})}.bind(this));
+        
+      if (!url){
+           // this.props.disabled=true;
+        }
+        else {
+        $(function(){
+            $.getJSON(url, function(data) {
+                $.each(data, function(key, val) {
+                    $('#marka').append('<option value="' + val.id + '">' + val.name + '</option>');
+                });
+            });
+        })
+        console.log(this.state.data);
+        }        return (
              <div className="rightColumn-markModYear_markInfo">
                             <select id ='marka'>
                             </select>

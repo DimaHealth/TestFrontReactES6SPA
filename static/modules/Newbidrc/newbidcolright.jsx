@@ -31,9 +31,9 @@ class Bidcolright extends React.Component {
         return (
             <div className="rightColumn">
                 <div className="rightColumn-markModYear">
+                    <Markinfo url='./static/json/auto brands.json' />
                     <Markinfo />
-                    <Modinfo />
-                    <Yearinfo />
+                    <Markinfo />
                 </div>
 
 
