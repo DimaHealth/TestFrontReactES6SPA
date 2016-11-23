@@ -23,6 +23,8 @@ import Uploadphoto from './uploadphoto'
 
         };
         this.onMarkSelect = this.onMarkSelect.bind(this);
+        this.onModelSelect = this.onModelSelect.bind(this);
+        this.onYearSelect = this.onYearSelect.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -31,6 +33,19 @@ import Uploadphoto from './uploadphoto'
         auto.markId=e;
         this.setState({ auto });
         $.getJSON('./static/json/'+ e + '.json', function(data) {this.setState({model: data})}.bind(this));
+    }
+
+      onModelSelect(e) {
+        let auto = this.state.auto;
+         auto.modelId=e;
+         this.setState({ auto });
+        $.getJSON('./static/json/'+ e + '.json', function(data) {this.setState({modelyear: data})}.bind(this));
+    }
+
+   onYearSelect(e) {
+        let auto = this.state.auto;
+        auto.year=e;
+        this.setState({ auto });
     }
     handleSubmit(event) {
         let {message, value} = this.state;
@@ -47,8 +62,8 @@ import Uploadphoto from './uploadphoto'
             <div className="rightColumn">
                 <div className="rightColumn-markModYear">
                     <Markinfo options = {this.state.data} value={this.state.message} onFuck={this.onMarkSelect} placeholder='Выберите марку'/>
-                    <Markinfo options = {this.state.model}/>
-                    <Markinfo />
+                    <Markinfo options = {this.state.model} value={this.state.message} onFuck={this.onModelSelect} placeholder='Выберите модель'/>
+                    <Markinfo options = {this.state.modelyear} value={this.state.message} onFuck={this.onYearSelect} placeholder='Выберите год'/>
                 </div>
 
 
