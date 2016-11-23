@@ -2,6 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 class Filtertable extends React.Component {
+    constructor(props){
+        super(props);
+        this.searchChanged = this.searchChanged.bind(this);
+    }
+
+    searchChanged(e){
+        
+    }
+
     render() {
         return (
         <table className="filterTable">
@@ -9,11 +18,11 @@ class Filtertable extends React.Component {
                 <tr>
                     <td>
                         <p>
-                        Фильтрация по № заявки:
+                            Фильтрация по № заявки:
                         </p>
                     </td>
                     <td>
-                        <input type="text" />
+                        <input onChange = {this.searchChanged} type="text"/>
                     </td>
                 </tr>
              </tbody>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Filtertable from './filtertable'
 import Bidtable from './bidtable'
 
+
 class BidkiList extends React.Component {
     constructor(props) {
         super(props);
@@ -23,7 +24,6 @@ class BidkiList extends React.Component {
             <div className="listBidCarcas">
                 <Filtertable />
                 <Bidtable />
-        
             </div>
         );
     }  
