@@ -30,8 +30,9 @@ class Markinfo extends React.Component {
     }
 
     handleChange(e) {
-        console.log(e.target.value);
-        this.setState({selected: e.target.value});
+//        console.log(e.target.value);
+ //       this.setState({value: e.target.value});
+        this.props.onFuck(Number(e.target.value));
     }
     
     render() {
@@ -42,11 +43,10 @@ class Markinfo extends React.Component {
             )
         })};
         return (
-             <div className="rightColumn-markModYear_markInfo">
                             <select onChange={this.handleChange}>
+                              <option>{this.props.placeholder}</option>  
                               {options}
                             </select>
-                        </div>
         );
     }
 }

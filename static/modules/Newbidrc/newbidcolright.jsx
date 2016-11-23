@@ -22,12 +22,15 @@ import Uploadphoto from './uploadphoto'
             desiredDate:''
 
         };
-        this.handleChange = this.handleChange.bind(this);
+        this.onMarkSelect = this.onMarkSelect.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange(event) {
-        this.setState({ value: event.target.value });
+    onMarkSelect(e) {
+        let auto = this.state.auto;
+        auto.markId=e;
+        this.setState({ auto });
+        $.getJSON('./static/json/'+ e + '.json', function(data) {this.setState({model: data})}.bind(this));
     }
     handleSubmit(event) {
         let {message, value} = this.state;
@@ -43,8 +46,8 @@ import Uploadphoto from './uploadphoto'
         return (
             <div className="rightColumn">
                 <div className="rightColumn-markModYear">
-                    <Markinfo options = {this.state.data} />
-                    <Markinfo />
+                    <Markinfo options = {this.state.data} value={this.state.message} onFuck={this.onMarkSelect} placeholder='Выберите марку'/>
+                    <Markinfo options = {this.state.model}/>
                     <Markinfo />
                 </div>
 
