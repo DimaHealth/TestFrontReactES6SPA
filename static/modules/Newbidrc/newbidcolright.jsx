@@ -8,12 +8,19 @@ import Descworks from './descworks'
 import Photo from './photo'
 import Uploadphoto from './uploadphoto'
 
-class Bidcolright extends React.Component {
-    constructor(props) {
-        super(props);
+ class Bidcolright extends React.Component {
+     constructor(props) {
+         super(props);
         this.state = {
-            value: '',
-            message: []
+            auto:{
+                modelId: '',
+                markId: '',
+                year:''
+            },
+            message:'',
+            messageImg:'',
+            desiredDate:''
+
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,11 +34,16 @@ class Bidcolright extends React.Component {
         message.push(value);
         this.setState({ message, value: '' });
     }
+    componentDidMount(){
+      $.getJSON('./static/json/auto brands.json', function(data) {this.setState({data: data})}.bind(this));
+    }
     render() {
+//      $.getJSON('./static/json/auto brands.json', function(data) {this.setState({data: data})}.bind(this));
+//      console.log(this.state.data);
         return (
             <div className="rightColumn">
                 <div className="rightColumn-markModYear">
-                    <Markinfo url='./static/json/auto brands.json' />
+                    <Markinfo options = {this.state.data} />
                     <Markinfo />
                     <Markinfo />
                 </div>

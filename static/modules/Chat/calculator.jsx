@@ -4,6 +4,9 @@ import CalcInput from './calcinput'
 
 
 
+// const CalcInput = props => (
+//   <input className="red" onChange={props.onChange} />
+// )
 
 class Calculator extends React.Component {
    constructor(props) {
