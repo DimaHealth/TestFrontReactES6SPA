@@ -9,6 +9,11 @@ class BidRows extends React.Component {
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleAnswer = this.handleAnswer.bind(this);
+    }
+
+    handleAnswer(){
+        console.log(this.props.number);
     }
 
     handleSubmit() {
@@ -25,30 +30,30 @@ class BidRows extends React.Component {
         if (!this.state.opened) 
         {
            return(
-               <tbody>
-               <tr className="table-row">
-                <td className="table-row_column">
-                    {this.props.number}
-                </td>
-                <td className="table-row_column">
-                    {this.props.date}
-                </td>
-                <td className="table-row_column">
-                    {this.props.car}
-                </td>
-                <td className="table-row_column">
-                    {this.props.desc}
-                </td>
-                <td className="table-row_column">
-                    {this.props.message}
-                </td>
-                <td className="table-row_column">
-                    <button className="row-column_responseButton">Ответить</button>
-                </td>
-                <td>
-                    <button className="row-column_showDetailsButton" onClick={this.handleSubmit}>▼</button>
-                </td>
-            </tr>
+            <tbody>
+                <tr className="table-row">
+                    <td className="table-row_column">
+                        {this.props.number}
+                    </td>
+                    <td className="table-row_column">
+                        {this.props.date}
+                    </td>
+                    <td className="table-row_column">
+                        {this.props.car}
+                    </td>
+                    <td className="table-row_column">
+                        {this.props.desc}
+                    </td>
+                    <td className="table-row_column">
+                        {this.props.message}
+                    </td>
+                    <td className="table-row_column">
+                        <button className="row-column_responseButton" onClick = {this.handleAnswer}>Ответить</button>
+                    </td>
+                    <td>
+                        <button className="row-column_showDetailsButton" onClick={this.handleSubmit}>▼</button>
+                    </td>
+                </tr>
             </tbody>
             );
         }
@@ -99,6 +104,7 @@ class Bidtable extends React.Component {
         this.state.bids.forEach(function (bid, index ) {
             rows.push(<BidRows number={bid.number} date={bid.date}
                 message={bid.message} desc={bid.desc} region={bid.region}
+                opened = {bid.opened}
                 name={bid.name} status={bid.status} distanse={bid.status}
                 car={bid.car} year={bid.year} engine={bid.engine} key={index} />);
         });
