@@ -18,7 +18,6 @@ class BidRows extends React.Component {
 
     handleSubmit() {
         this.setState({ opened: true });
-        console.log(this);
     }
 
     handleChange(){
@@ -108,7 +107,6 @@ class Bidtable extends React.Component {
                 name={bid.name} status={bid.status} distanse={bid.status}
                 car={bid.car} year={bid.year} engine={bid.engine} key={index} />);
         });
-        console.log("rows:", rows);
         return (
             <table className="listBidCarcas-bidTable" cols={7} rows={4}>
                 <thead>
