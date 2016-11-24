@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import moment from 'moment'
 
 class Messages extends Component {
@@ -6,20 +6,27 @@ class Messages extends Component {
     super(props);
   }
   render() {
-          var messages = this.props.messages.map((message, key) => {  
-            return (
-              <p key={key} className="send-messages">
-              <span> {message.date} </span><br/>
-                {message.m}
-              </p>
-            )
-          })
-          
+    var messages = this.props.messages.map((message, key) => {
+      if (message.m != '') {
+
+
+        return (
+          <p key={key} className="send-messages">
+
+            <span> {message.date} </span><br />
+
+            {message.m}
+          </p>
+        )
+      }
+    })
+
     return (
       <div>
-         {messages}  
-         </div>
+        {messages}
+      </div>
     );
+
   }
 }
 
