@@ -11,7 +11,6 @@ class Bidtable extends React.Component {
     }
     render() {
         var rows = [], content = [];
-        console.log("В таблицу передан фильтр: " + this.props.filter);
         if (this.props.filter==0) {
             this.state.bids.forEach(function (bid, index) {
                     rows.push(<BidRows number={bid.number} date={bid.date}
