@@ -35,7 +35,7 @@ class Dateofrem extends React.Component {
         return (
                     <div className="rightColumn-dateofRem">
                         <p className="rightColumn-dateofRem_title">Желаемая дата ремонта</p>
-                       <DatePicker dateFormat="DD/MM/YYYY" selected={this.props.startDate} onChange={this.handleChange} minDate={moment()} placeholderText="Желаемая дата ремонта" isClearable={true}/>
+                       <DatePicker dateFormat="DD/MM/YYYY" selected={this.props.startDate} onChange={this.handleChange} minDate={moment()} placeholderText="Укажите дату" isClearable={true}/>
                     </div>
                         
         );
