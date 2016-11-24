@@ -8,6 +8,7 @@ import Descworks from './descworks'
 import Photo from './photo'
 import Uploadphoto from './uploadphoto'
 
+
  class Bidcolright extends React.Component {
      constructor(props) {
          super(props);
