@@ -14,8 +14,8 @@ class Form extends React.Component {
 
     }
 
-    handleSubmit(event) {
-       
+    handleSubmit(e) {
+       this.setState({messages: e});
     }
 
 	render() {

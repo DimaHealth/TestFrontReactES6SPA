@@ -69,7 +69,6 @@ class Markinfo extends React.Component {
         //       x++;
         //       year++;
         //   } while (year<=this.props.years[1])
-        console.log(options);
         };
         return (
                             <select onChange={this.handleChange}>

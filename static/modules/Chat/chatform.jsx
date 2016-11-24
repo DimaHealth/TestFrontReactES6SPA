@@ -19,6 +19,7 @@ class Chatform extends React.Component {
     let {message, value} = this.state;
 	message.push(value);
 	this.props.onSubmit(message);
+	console.log(message);
 	this.setState({message, value: ''});
 }
 	render() {
@@ -29,10 +30,10 @@ class Chatform extends React.Component {
 		<button className="go" onClick={this.handleSubmit}>
 		Поехали
 		</button>
-        {this.state.message.map((message, id) => <p key={id} className="sweet">{message}</p>)}
 		</div>
 		
 		);
 	}
 }
 export default Chatform;
+//        {this.state.message.map((message, id) => <p key={id} className="sweet">{message}</p>)}
