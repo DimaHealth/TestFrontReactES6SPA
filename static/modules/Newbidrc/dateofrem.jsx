@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import DatePicker from 'react-datepicker'
+import moment from 'moment'
 
 
 class Dateofrem extends React.Component {
@@ -8,25 +9,22 @@ class Dateofrem extends React.Component {
         super(props);
         this.state = {
             value: '',
-            message: []
+            message: [],
+            startDate: this.props.startDate
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(e) {
-        this.setState({ startDate: date });
+        this.props.onChange(e);
+        this.setState({ startDate: e });
     }
     handleSubmit(event) {
        
     }
 
 
-     getInitialState(e) {
-    return {
-      startDate: moment()
-    };
-}
  
 //   handleChange: function(date) {
 //     this.setState({
@@ -37,7 +35,7 @@ class Dateofrem extends React.Component {
         return (
                     <div className="rightColumn-dateofRem">
                         <p className="rightColumn-dateofRem_title">Желаемая дата ремонта</p>
-                       <DatePicker dateFormat="YYYY/MM/DD" selected={this.state.startDate} onChange={this.handleChange} />
+                       <DatePicker dateFormat="DD/MM/YYYY" selected={this.props.startDate} onChange={this.handleChange} minDate={moment()} placeholderText="Желаемая дата ремонта" isClearable={true}/>
                     </div>
                         
         );

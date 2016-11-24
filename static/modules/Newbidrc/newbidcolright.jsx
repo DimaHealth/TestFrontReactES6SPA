@@ -7,16 +7,18 @@ import Dateofrem from './dateofrem'
 import Descworks from './descworks'
 import Photo from './photo'
 import Uploadphoto from './uploadphoto'
+import moment from 'moment'
 
 
  class Bidcolright extends React.Component {
      constructor(props) {
          super(props);
-        this.state = { auto:{modelId: null, markId: null, year: null} };
+        this.state = { auto:{modelId: null, markId: null, year: null }, startDate: null };
         this.onMarkSelect = this.onMarkSelect.bind(this);
         this.onModelSelect = this.onModelSelect.bind(this);
         this.onYearSelect = this.onYearSelect.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
     onMarkSelect(e) {
@@ -47,6 +49,11 @@ import Uploadphoto from './uploadphoto'
         auto.year=e;
         this.setState({ auto });
     }
+
+    handleChange(e) {
+        this.setState({ startDate: e });
+    }
+
     handleSubmit(event) {
         let {message, value} = this.state;
         message.push(value);
@@ -72,7 +79,7 @@ import Uploadphoto from './uploadphoto'
                    <Photo />
                    <Uploadphoto />
                 </div>
-                <Dateofrem />
+                <Dateofrem startDate={this.state.startDate} onChange={this.handleChange}/>
             </div>
 
         );
