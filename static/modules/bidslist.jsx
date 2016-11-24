@@ -8,22 +8,19 @@ class BidkiList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: '',
-            message: []
+            filter: 0
         };
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.searchUpdater = this.searchUpdater.bind(this);
     }
-
-    handleSubmit(event) {
-        let {message, value} = this.state;
-        message.push(value);
-        this.setState({ message, value: '' });
+    searchUpdater (filterValue){
+        this.setState({ filter: filterValue});
     }
     render() {
+        let requestID = this.state.filter;
         return(
             <div className="listBidCarcas">
-                <Filtertable />
-                <Bidtable />
+                <Filtertable searchUpdate = {this.searchUpdater}/>
+                <Bidtable filter = {requestID} />
             </div>
         );
     }  
