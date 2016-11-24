@@ -18,6 +18,7 @@ class Chatform extends React.Component {
 	handleSubmit(event) {
     let {message, value} = this.state;
 	message.push(value);
+	this.props.onSubmit(message);
 	this.setState({message, value: ''});
 }
 	render() {

@@ -4,7 +4,20 @@ import Tabs from './Chat/tabs'
 import Infotable from './Chat/infotable'
 import Chatform from './Chat/chatform'
 import Calculator from './Chat/calculator'
+import Messages from './Chat/messages'
 class Form extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { messages: [] };
+//        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+
+    }
+
+    handleSubmit(event) {
+       
+    }
+
 	render() {
 		return (
     <div className="carcas">
@@ -13,14 +26,12 @@ class Form extends React.Component {
            <Infotable />
             <div className="chat-window">
                 <div className="message-block_example">
-                    <p className="message-block_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque sequi omnis, impedit pariatur ut sint tempore officiis voluptate velit dolorem ullam ducimus animi eligendi nam at ea nulla voluptatibus ipsam!
-                    </p>
+                    <Messages messages={this.state.messages} className="message-block_text"/>
                 </div>
             </div>
             <div className="calculator-and-chatTextarea">
                 <Calculator />
-                <Chatform />
+                <Chatform  onSubmit={this.handleSubmit}/>
             </div>
         </div>
    </div>
