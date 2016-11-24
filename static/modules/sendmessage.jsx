@@ -25,9 +25,8 @@ class Form extends React.Component {
         <div className = "right-column_chat">
            <Infotable />
             <div className="chat-window">
-                <div className="message-block_example">
-                    <Messages messages={this.state.messages} className="message-block_text"/>
-                </div>
+            <p className="entry-message"> <span> Оганнес </span><br/>Привет родной, как дела? </p>
+                    <Messages messages={this.state.messages} className="message-block_example"/>
             </div>
             <div className="calculator-and-chatTextarea">
                 <Calculator />

@@ -69,6 +69,7 @@ body {
     width: 62%;
     height: 515px;
     margin-left: 37.5%;
+    overflow: auto;
     margin-top: -3px;
     border: 1px solid black;
 }
@@ -88,11 +89,15 @@ body {
 
 .calculator-body {
     width: 50%;
-    margin-top: -150px;
+    margin-top: 360px;
 }
 
 .calcInput {
     width: 70px;
+}
+
+.chat-message_block {
+    margin-top: -120px;
 }
 
 .calculator-and-chatTextarea {
@@ -181,4 +186,31 @@ td {
 
 .listBidCarcas-bidTable_headTable {
     font-weight: bold;
+}
+
+.send-messages {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 350px !important;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    text-align: left;
+    margin-left: 450px;
+    background: #fff1e3;
+}
+
+.entry-message {
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    width: 350px !important;
+    text-align: left;
+    overflow-wrap: break-word;
+    background: #E1F7FF;
+    border-radius: 3px;
+}
+
+.entry-message span {
+    font-weight: bold;
+    font-size: 16pt;
 }

@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import moment from 'moment'
 
 class Chatform extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-      value: '',
-      message: []
+      	value: '',
+		message: [{m:'', date:''}]
     };
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,7 +18,7 @@ class Chatform extends React.Component {
 	}
 	handleSubmit(event) {
     let {message, value} = this.state;
-	message.push(value);
+	message.push({m:value, date:moment().format('MMMM Do YYYY, h:mm:ss a')});
 	this.props.onSubmit(message);
 	console.log(message);
 	this.setState({message, value: ''});
