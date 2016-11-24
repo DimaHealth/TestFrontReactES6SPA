@@ -1,0 +1,303 @@
+{
+    "bids": [
+        {
+            "bid_id": "4151",
+            "user_id": 3810,
+            "description": "\u0422\u041e,\u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0443",
+            "current_time": 1476282662,
+            "active": false,
+            "car": {
+                "brand_name": "\u0412\u0410\u0417",
+                "model_name": "Granta",
+                "year": 2012
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "4149",
+            "user_id": 4202,
+            "description": "\u0437\u0430\u043c\u0435\u043d\u0430 \u0437\u0430\u0434\u043d\u0438\u0445 \u0441\u0442\u043e\u0435\u043a",
+            "current_time": 1476273701,
+            "active": false,
+            "car": {
+                "brand_name": "Chevrolet",
+                "model_name": "Aveo",
+                "year": 2012
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "4147",
+            "user_id": 3688,
+            "description": "\u0423\u0431\u0440\u0430\u0442\u044c \u0432\u043c\u044f\u0442\u0438\u043d\u0443. \u0424\u043e\u0442\u043e \u043f\u0440\u0438\u043b\u0430\u0433\u0430\u0435\u0442\u0441\u044f",
+            "current_time": 1476268451,
+            "active": false,
+            "car": {
+                "brand_name": "Hyundai",
+                "model_name": "Solaris",
+                "year": 2014
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "4146",
+            "user_id": 4198,
+            "description": "1. \u0417\u0430\u043c\u0435\u043d\u0430 \u043c\u0430\u0441\u043b\u0430.\n2. \u0417\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u0440\u043c\u043e\u0437\u043d\u044b\u0445 \u043a\u043e\u043b\u043e\u0434\u043e\u043a \u0437\u0430\u0434\u043d\u0438\u0435 \u0438 \u043f\u0435\u0440\u0435\u0434\u043d\u0438\u0435.",
+            "current_time": 1476265763,
+            "active": false,
+            "car": {
+                "brand_name": "Kia",
+                "model_name": "Carens",
+                "year": 2009
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "4141",
+            "user_id": 759,
+            "description": "\u0417\u0430\u043c\u0435\u043d\u0438\u0442\u044c \u0441\u0442\u043e\u0439\u043a\u0438 \u0441\u0442\u0430\u0431\u0438\u043b\u0438\u0437\u0430\u0442\u043e\u0440\u0430 \u043f\u0430\u0440\u0430.",
+            "current_time": 1476219555,
+            "active": false,
+            "car": {
+                "brand_name": "Infiniti",
+                "model_name": "EX",
+                "year": 2011
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "4135",
+            "user_id": 4177,
+            "description": "\u0441\u0432\u0430\u0440\u0438\u0442\u044c \u0432\u044b\u0445\u043b\u043e\u043f, \u043e\u0442 \u0432\u044b\u043f\u0443\u0441\u043a\u043d\u043e\u0433\u043e \u043a\u043e\u043b\u043b\u0435\u043a\u0442\u043e\u0440\u0430 \u0434\u043e \u043a\u043e\u043d\u0446\u0430, \u043b\u044e\u0431\u044b\u0435 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u044b, \u043f\u0440\u044f\u043c\u0430\u044f \u0442\u0440\u0443\u0431\u0430, \u0443\u0434\u0430\u043b\u0435\u043d\u0438\u0435 \u043a\u0430\u0442\u0430\u043b\u0438\u0437\u0430\u0442\u043e\u0440\u043e\u0432 \u0438 \u0442\u0434 \u0411\u044e\u0434\u0436\u0435\u0442 1520 \u0442\u044b\u0441\u0440",
+            "current_time": 1476199836,
+            "active": false,
+            "car": {
+                "brand_name": "Toyota",
+                "model_name": "Mark II",
+                "year": 1992
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "4128",
+            "user_id": 3862,
+            "description": "\u0425\u0438\u043c\u0447\u0438\u0441\u0442\u043a\u0430 \u0441\u0438\u0434\u0435\u043d\u0438\u0439 \u0438 \u043f\u043e\u0442\u043e\u043b\u043a\u0430",
+            "current_time": 1476193840,
+            "active": false,
+            "car": {
+                "brand_name": "Skoda",
+                "model_name": "Octavia",
+                "year": 2014
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "4127",
+            "user_id": 3775,
+            "description": "\u0412\u0432\u0430\u0440\u0438\u0442\u044c \u0432\u043c\u0435\u0441\u0442\u043e \u043a\u0430\u0442\u0430\u043b\u0438\u0437\u0430\u0442\u043e\u0440\u0430 \u043a\u0443\u0441\u043e\u043a \u0442\u0440\u0443\u0431\u044b \u0434\u0438\u0430\u043c\u0435\u0442\u0440\u043e\u043c 7080 \u043c\u043c \u0438\u043b\u0438 \u043f\u043b\u0430\u043c\u0435\u0433\u0430\u0441\u0438\u0442\u0435\u043b\u044c.  \u0414\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044c 1.4\u0442 \u0441 \u043e\u0434\u043d\u0438\u043c \u043a\u0430\u0442\u0430\u043b\u0438\u0437\u0430\u0442\u043e\u0440\u043e\u043c \u043f\u043e\u0441\u043b\u0435 \u0442\u0443\u0440\u0431\u0438\u043d\u044b.",
+            "current_time": 1476193833,
+            "active": false,
+            "car": {
+                "brand_name": "Opel",
+                "model_name": "Astra",
+                "year": 2013
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3654",
+            "user_id": 3603,
+            "description": "\u0437\u0430\u043c\u0435\u043d\u0430 \u0441\u0446\u0435\u043f\u043b\u0435\u043d\u0438\u044f",
+            "current_time": 1475675184,
+            "active": false,
+            "car": {
+                "brand_name": "Ford",
+                "model_name": "Focus",
+                "year": 2002
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3652",
+            "user_id": 3598,
+            "description": "\u041e\u043f\u043e\u0440\u0443 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f \u043f\u0435\u0440\u0435\u0434\u043d\u044e\u044e \u0437\u0430\u043c\u0435\u043d\u0438\u0442\u044c.",
+            "current_time": 1475667857,
+            "active": false,
+            "car": {
+                "brand_name": "Mitsubishi",
+                "model_name": "Lancer",
+                "year": 2004
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3650",
+            "user_id": 3409,
+            "description": "\u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u0435\u0440\u043c\u043e\u0441\u0442\u0430\u0442\u0430, \u043f\u0440\u043e\u043c\u044b\u0432\u043a\u0430 \u0440\u0430\u0434\u0438\u0430\u0442\u043e\u0440\u0430, \u0437\u0430\u043c\u0435\u043d\u0430 \u0430\u043d\u0442\u0438\u0444\u0440\u0438\u0437\u0430",
+            "current_time": 1475657375,
+            "active": false,
+            "car": {
+                "brand_name": "Hyundai",
+                "model_name": "Tucson",
+                "year": 2005
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3645",
+            "user_id": 2903,
+            "description": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0446\u0435\u043f\u043b\u0435\u043d\u0438\u044f \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e",
+            "current_time": 1475650529,
+            "active": false,
+            "car": {
+                "brand_name": "Hyundai",
+                "model_name": "Accent",
+                "year": 2004
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3644",
+            "user_id": 3598,
+            "description": "\u041e\u043f\u043e\u0440\u0430 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f \u0437\u0430\u0434\u043d\u044f\u044f, \u0441\u0442\u043e\u0439\u043a\u0438 \u0441\u0442\u0430\u0431\u0438\u043b\u0438\u0437\u0430\u0442\u043e\u0440\u0430 \u043f\u0435\u0440\u0435\u0434\u043d\u0438\u0435 \u0417\u0430\u043f\u0447\u0430\u0441\u0442\u0438 \u0435\u0441\u0442\u044c",
+            "current_time": 1475648810,
+            "active": false,
+            "car": {
+                "brand_name": "Mitsubishi",
+                "model_name": "Lancer",
+                "year": 2004
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3640",
+            "user_id": 3595,
+            "description": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430",
+            "current_time": 1475628767,
+            "active": false,
+            "car": {
+                "brand_name": "Honda",
+                "model_name": "Saber",
+                "year": 2001
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3638",
+            "user_id": 3593,
+            "description": "\u041f\u0440\u043e\u0432\u0430\u043b\u0438\u043b\u0430\u0441\u044c \u0432\u043d\u0443\u0442\u0440\u044c \u0431\u0430\u043c\u043f\u0435\u0440\u0430 \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0442\u0443\u043c\u0430\u043d\u043d\u0430\u044f \u0444\u0430\u0440\u0430, \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0444\u0430\u0440\u0443 \u043d\u0430 \u043c\u0435\u0441\u0442\u043e.",
+            "current_time": 1475611896,
+            "active": false,
+            "car": {
+                "brand_name": "Volkswagen",
+                "model_name": "Tiguan",
+                "year": 2013
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3630",
+            "user_id": 3583,
+            "description": "\u0437\u0430\u043c\u0435\u043d\u0430 \u043f\u0440\u043e\u043a\u043b\u0430\u0434\u043a\u0438 \u0413\u0411\u0426",
+            "current_time": 1475592813,
+            "active": false,
+            "car": {
+                "brand_name": "Daewoo",
+                "model_name": "Nexia",
+                "year": 2006
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3565",
+            "user_id": 3518,
+            "description": "\u0422\u041e 4 \u0433\u043e\u0434\u0430",
+            "current_time": 1475516587,
+            "active": false,
+            "car": {
+                "brand_name": "Hyundai",
+                "model_name": "ix35",
+                "year": 2012
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3559",
+            "user_id": 3513,
+            "description": "\u041a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u0430\u044f \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430, \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0445\u043e\u0434\u043e\u0432\u043e\u0439,\u0437\u0430\u043c\u0435\u043d\u0430 \u0437\u0430\u0434\u043d\u0438\u0445 \u0430\u043c\u043e\u0440\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u043e\u0432.",
+            "current_time": 1475514238,
+            "active": false,
+            "car": {
+                "brand_name": "Hyundai",
+                "model_name": "Elantra",
+                "year": 2004
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3557",
+            "user_id": 3512,
+            "description": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f, \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0438\u0435 \u0442\u0440\u043e\u0435\u043d\u0438\u044f \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f, \u0443\u0441\u0442\u0440\u0430\u043d\u0435\u043d\u0438\u0435 \u0442\u0435\u0447\u0438 \u043c\u0430\u0441\u043b\u0430  \u0441\u0430\u043b\u044c\u043d\u0438\u043a \u0432\u0430\u043b\u0430 \u0442\u0435\u0447\u0435\u0442, \u043a\u043e\u0440\u043e\u0447\u0435 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 \u043e\u043d \u043a\u0430\u043a \u0433\u043e\u0432\u043d\u043e. \u0425\u043e\u043b\u043e\u0441\u0442\u044b\u0435 \u043d\u0435 \u0434\u0435\u0440\u0436\u0438\u0442  \u0437\u0430\u043c\u0435\u043d\u0443 \u0420\u0425\u0425 \u0434\u0435\u043b\u0430\u043b, \u0414\u041c\u0420\u0412 \u043d\u0435 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442  \u0432\u0440\u043e\u0434\u0435 \u0431\u044b.",
+            "current_time": 1475513227,
+            "active": false,
+            "car": {
+                "brand_name": "\u0412\u0410\u0417",
+                "model_name": "2121 (4x4)",
+                "year": 2002
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3552",
+            "user_id": 3508,
+            "description": "\u0420\u0435\u043c\u043e\u043d\u0442 \u043f\u043e\u0434\u0432\u0435\u0441\u043a\u0438,\u043f\u043e\u043a\u0440\u0430\u0441\u043a\u0430,\u0437\u0430\u043c\u0435\u043d\u0430 \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0442\u0443\u043c\u0430\u043d\u043e\u043a \u0441 \u043f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u043e\u0439 \u043f\u043e\u0432\u043e\u0440\u043e\u0442\u0430",
+            "current_time": 1475512559,
+            "active": false,
+            "car": {
+                "brand_name": "Mitsubishi",
+                "model_name": "Legnum",
+                "year": 2000
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3544",
+            "user_id": 3490,
+            "description": "\u041f\u043e\u043c\u0435\u043d\u044f\u0442\u044c \u043f\u0440\u043e\u043a\u043b\u0430\u0434\u043a\u0443 \u043a\u043b\u0430\u043f\u0430\u043d\u043d\u043e\u0439 \u043a\u0440\u044b\u0448\u043a\u0438, \u043c\u0435\u043d\u044f\u043b \u043c\u0435\u0441\u044f\u0446 \u043d\u0430\u0437\u0430\u0434 \u0441\u043d\u043e\u0432\u0430 \u043f\u043e\u0442\u0435\u043a\u043b\u0430",
+            "current_time": 1475511296,
+            "active": false,
+            "car": {
+                "brand_name": "Opel",
+                "model_name": "Astra",
+                "year": 2011
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3507",
+            "user_id": 3419,
+            "description": "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f \u0438 \u0445\u043e\u0434\u043e\u0432\u043e\u0439 \u0420\u0435\u043c\u043e\u043d\u0442 \u0435\u0441\u043b\u0438 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e",
+            "current_time": 1475500313,
+            "active": false,
+            "car": {
+                "brand_name": "Toyota",
+                "model_name": "Corolla",
+                "year": 2006
+            },
+            "messages": false
+        },
+        {
+            "bid_id": "3501",
+            "user_id": 3404,
+            "description": "\u0417\u0430\u043c\u0435\u043d\u0430 \u0441\u0446\u0435\u043f\u043b\u0435\u043d\u0438\u044f \u0432\u044b\u0436\u0438\u043c\u043d\u043e\u0439 \u043f\u043e\u0434\u0448\u0438\u043f\u043d\u0438\u043a,\u0434\u0438\u0441\u043a,\u043a\u043e\u0440\u0437\u0438\u043d\u0430",
+            "current_time": 1475498643,
+            "active": false,
+            "car": {
+                "brand_name": "Opel",
+                "model_name": "Astra",
+                "year": 2007
+            },
+            "messages": false
+        }
+    ]
+}
