@@ -93,9 +93,9 @@ import Select from 'react-select'
         return (
             <div className="rightColumn">
                 <div className="rightColumn-markModYear">
-                    <Select options = {this.state.marks} onChange={this.onMarkSelect} placeholder='Марка' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedMark}/>
-                    <Select options = {this.state.models} onChange={this.onModelSelect} placeholder='Модель' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedModel}/>
-                    <Select options = {this.state.modelyears} onChange={this.onYearSelect} placeholder='Год' clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.yearSelectState}/>
+                    <Select className="rightColumn-markModYear-select" options = {this.state.marks} onChange={this.onMarkSelect} placeholder='Марка' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedMark}/>
+                    <Select className="rightColumn-markModYear-select" options = {this.state.models} onChange={this.onModelSelect} placeholder='Модель' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedModel}/>
+                    <Select className="rightColumn-markModYear-select" options = {this.state.modelyears} onChange={this.onYearSelect} placeholder='Год' clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.yearSelectState}/>
                 </div>
 
 

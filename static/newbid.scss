@@ -52,10 +52,10 @@
 }
 
 .rightColumn-markModYear {
-    margin-top: 20px;
+    margin-top: 2.7px;
     margin-bottom: 20px;
     border-bottom: 1px solid black;
-    padding-bottom: 12px;
+    padding-bottom: 3px;
 }
 
 .rightColumn-markModYear_markInfo,
@@ -103,6 +103,13 @@
 .whattoDo-uploadPhotoBut-uploadButTitle {
     background-color: transparent;
     border: 1px solid black;
+}
+
+.rightColumn-markModYear-select {
+    width: 25%;
+    display: inline-block;
+    margin-left: 2%;
+    padding-top: 1%;
 }
 
 p {
