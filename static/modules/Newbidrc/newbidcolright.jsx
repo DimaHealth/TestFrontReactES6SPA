@@ -12,7 +12,7 @@ import Select from 'react-select'
  class Bidcolright extends React.Component {
      constructor(props) {
          super(props);
-        this.state = { startDate: null };
+        this.state = { startDate: null, selectedMark: null, selectedModel: null, selectedYear: null, yearSelectState: null };
         this.onMarkSelect = this.onMarkSelect.bind(this);
         this.onModelSelect = this.onModelSelect.bind(this);
         this.onYearSelect = this.onYearSelect.bind(this);
@@ -22,42 +22,49 @@ import Select from 'react-select'
 
     onMarkSelect(e) {
         if(e){
-          $.getJSON('https://test.uremont.com/auto/models?mark='+ e, function(data) {this.setState({selectedMark:e, models: data.map((option) => ({value: option.id, label: option.name}))})}.bind(this));
+          $.getJSON('https://test.uremont.com/auto/models?mark='+ e, function(data) {this.setState({selectedMark:e, models: data.map((option) => ({value: option.id, label: option.name})), modelyears: null})}.bind(this));
         }
         else{
-          this.setState({selectedMark:e, modelyears: null, models: null });
+          this.setState({selectedMark:e, modelyears: null, models: null, selectedModel: null, selectedYear: null });
         }
     }
 
       onModelSelect(e) {
           console.log(e);
         if(e){
-              var options={};
+              var options=[];
           $.getJSON('https://test.uremont.com/auto/year?model='+ e, function(data) {
               var y=0;
-              if(data[1]!==9999){
-                  for(let x=data[0]; x<=data[1];x++){
-                    options.push({value: y, label: x});
-                    y++
-                  }
-
-              } else {
+              if(data[1]==9999){
                   for (let x = data[0]; x <= new Date().getFullYear; x++) {
                       options.push({ value: y, label: x });
                       y++;
                   }
 
-          }})
+              } else if(data==null) {
+                  options=null;
+              } else {
+                  for(let x=data[0]; x<=data[1];x++){
+                    options.push({value: y, label: x});
+                    y++
+                  }
+              }
 
-              this.setState({ selectedModel:e, modelyears: options});
-        }
-        else{
-          this.setState({selectedModel:e, modelyears: null });
+          })
+          this.setState({ selectedModel:e, modelyears: options, selectedYear: null });
+        } else {
+            this.setState({selectedModel:e, modelyears: null, selectedYear: null });
         }
     }
 
    onYearSelect(e) {
-        this.setState({ selectedYear:e });
+       if(e){
+
+         this.setState({ selectedYear: e.label, yearSelectState: e });
+       } else {
+
+         this.setState({ selectedYear: null, yearSelectState: e });
+       }
     }
 
     handleChange(e) {
@@ -88,9 +95,7 @@ import Select from 'react-select'
                 <div className="rightColumn-markModYear">
                     <Select options = {this.state.marks} onChange={this.onMarkSelect} placeholder='Марка' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedMark}/>
                     <Select options = {this.state.models} onChange={this.onModelSelect} placeholder='Модель' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedModel}/>
-                    <Select options = {this.state.years} onChange={this.onYearSelect} placeholder='Год' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedYear}/>
-                    <Markinfo options = {this.state.models} onFuck={this.onModelSelect} placeholder='Модель'/>
-                    <Markinfo years = {this.state.modelyears} onFuck={this.onYearSelect} placeholder='Год'/>
+                    <Select options = {this.state.modelyears} onChange={this.onYearSelect} placeholder='Год' clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedYear}/>
                 </div>
 
 
