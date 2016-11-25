@@ -21,7 +21,7 @@ class CalcInput extends React.Component {
     const value = this.props.value;
     const maxlength = this.props.maxlength;
     return (
-        <input value={value}
+        <input className="inp" value={value}
                maxLength={maxlength}
                onChange={this.handleChange} />
     );
