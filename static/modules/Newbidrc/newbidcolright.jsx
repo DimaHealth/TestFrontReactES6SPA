@@ -95,7 +95,7 @@ import Select from 'react-select'
                 <div className="rightColumn-markModYear">
                     <Select options = {this.state.marks} onChange={this.onMarkSelect} placeholder='Марка' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedMark}/>
                     <Select options = {this.state.models} onChange={this.onModelSelect} placeholder='Модель' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedModel}/>
-                    <Select options = {this.state.modelyears} onChange={this.onYearSelect} placeholder='Год' clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedYear}/>
+                    <Select options = {this.state.modelyears} onChange={this.onYearSelect} placeholder='Год' clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.yearSelectState}/>
                 </div>
 
 
