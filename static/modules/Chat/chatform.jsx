@@ -18,7 +18,7 @@ class Chatform extends React.Component {
 	}
 	handleSubmit(event) {
     let {message, value} = this.state;
-	message.push({m:value, date:moment().format('MMMM Do YYYY, h:mm:ss a')});
+	message.push({m:value, date:moment().locale("ru").format('DD.MM.YY, h:mm:ss')});
 	this.props.onSubmit(message);
 	console.log(message);
 	this.setState({message, value: ''});

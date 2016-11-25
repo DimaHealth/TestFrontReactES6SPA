@@ -13,7 +13,7 @@ class Messages extends Component {
         return (
           <p key={key} className="send-messages">
 
-            <span> {message.date} </span><br />
+            <span className="date-style"> {message.date} </span><br />
 
             {message.m}
           </p>
