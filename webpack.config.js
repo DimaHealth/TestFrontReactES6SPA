@@ -7,7 +7,7 @@ webpackConfig = {
     context: __dirname,
     entry: {
         bundle: './static/app.js',
-        styles: ['./static/main.scss', './static/newbid.scss', './static/react-datepicker.min.scss']
+        styles: ['./static/main.scss', './static/newbid.scss', './static/react-datepicker.min.scss', './static/react-select.scss']
     },
     output: {
         path: './static/build',

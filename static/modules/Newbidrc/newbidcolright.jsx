@@ -6,12 +6,13 @@ import Descworks from './descworks'
 import Photo from './photo'
 import Uploadphoto from './uploadphoto'
 import moment from 'moment'
+import Select from 'react-select'
 
 
  class Bidcolright extends React.Component {
      constructor(props) {
          super(props);
-        this.state = { auto:{modelId: null, markId: null, year: null }, startDate: null };
+        this.state = { startDate: null };
         this.onMarkSelect = this.onMarkSelect.bind(this);
         this.onModelSelect = this.onModelSelect.bind(this);
         this.onYearSelect = this.onYearSelect.bind(this);
@@ -20,28 +21,43 @@ import moment from 'moment'
     }
 
     onMarkSelect(e) {
-          var auto = this.state.auto;
-          auto.markId=e;
-          auto.modelId=null;
-          auto.year=null;
         if(e){
-          $.getJSON('https://test.uremont.com/auto/models?mark='+ e , function(data) {this.setState({ auto, modelyears: [], models: data })}.bind(this));
+          $.getJSON('https://test.uremont.com/auto/models?mark='+ e, function(data) {this.setState({selectedMark:e, models: data.map((option) => ({value: option.id, label: option.name}))})}.bind(this));
+        }
+        else{
+          this.setState({selectedMark:e, modelyears: null, models: null });
         }
     }
 
       onModelSelect(e) {
-        var auto = this.state.auto;
-        auto.modelId=e;
-        auto.year=null;
+          console.log(e);
         if(e){
-          $.getJSON('https://test.uremont.com/auto/year?model='+ e, function(data) {this.setState({ auto, modelyears: data })}.bind(this));
+              var options={};
+          $.getJSON('https://test.uremont.com/auto/year?model='+ e, function(data) {
+              var y=0;
+              if(data[1]!==9999){
+                  for(let x=data[0]; x<=data[1];x++){
+                    options.push({value: y, label: x});
+                    y++
+                  }
+
+              } else {
+                  for (let x = data[0]; x <= new Date().getFullYear; x++) {
+                      options.push({ value: y, label: x });
+                      y++;
+                  }
+
+          }})
+
+              this.setState({ selectedModel:e, modelyears: options});
+        }
+        else{
+          this.setState({selectedModel:e, modelyears: null });
         }
     }
 
    onYearSelect(e) {
-        let auto = this.state.auto;
-        auto.year=e;
-        this.setState({ auto });
+        this.setState({ selectedYear:e });
     }
 
     handleChange(e) {
@@ -54,15 +70,25 @@ import moment from 'moment'
         this.setState({ message, value: '' });
     }
     componentDidMount(){
-      $.getJSON('./static/json/auto brands.json', function(data) {this.setState({marks: data})}.bind(this));
+      $.getJSON('./static/json/auto brands.json', function(data) {this.setState({marks: data.map((option) => ({value: option.id, label: option.name}))})}.bind(this));
+
+        // console.log(data);
+        // var options={value:'',lable:''};
+        //   options = data.map(option => Array.of({value:option.id, lable:option.name}));
+        //   this.setState({marks: options})
+        
     }
+
+
     render() {
 //      $.getJSON('./static/json/auto brands.json', function(data) {this.setState({data: data})}.bind(this));
 //      console.log(this.state.data);
         return (
             <div className="rightColumn">
                 <div className="rightColumn-markModYear">
-                    <Markinfo options = {this.state.marks} onFuck={this.onMarkSelect} placeholder='Марка'/>
+                    <Select options = {this.state.marks} onChange={this.onMarkSelect} placeholder='Марка' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedMark}/>
+                    <Select options = {this.state.models} onChange={this.onModelSelect} placeholder='Модель' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedModel}/>
+                    <Select options = {this.state.years} onChange={this.onYearSelect} placeholder='Год' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedYear}/>
                     <Markinfo options = {this.state.models} onFuck={this.onModelSelect} placeholder='Модель'/>
                     <Markinfo years = {this.state.modelyears} onFuck={this.onYearSelect} placeholder='Год'/>
                 </div>
