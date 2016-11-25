@@ -20,25 +20,21 @@ import moment from 'moment'
     }
 
     onMarkSelect(e) {
-          let auto = this.state.auto;
+          var auto = this.state.auto;
           auto.markId=e;
           auto.modelId=null;
           auto.year=null;
-          this.setState({ auto, modelyears: [], models: [] });
-          // $.getJSON('./static/json/'+ e + '.json', function(data) {this.setState({model: data})}.bind(this));
         if(e){
-          $.getJSON('https://test.uremont.com/auto/models?mark='+ e , function(data) {this.setState({models: data})}.bind(this));
+          $.getJSON('https://test.uremont.com/auto/models?mark='+ e , function(data) {this.setState({ auto, modelyears: [], models: data })}.bind(this));
         }
     }
 
       onModelSelect(e) {
-        let auto = this.state.auto;
-         auto.modelId=e;
-         auto.year=null;
-         this.setState({ auto, modelyears: [] });
-        // $.getJSON('./static/json/'+ e + '.json', function(data) {this.setState({modelyear: data})}.bind(this));
+        var auto = this.state.auto;
+        auto.modelId=e;
+        auto.year=null;
         if(e){
-        $.getJSON('https://test.uremont.com/auto/year?model='+ e, function(data) {this.setState({modelyears: data})}.bind(this));
+          $.getJSON('https://test.uremont.com/auto/year?model='+ e, function(data) {this.setState({ auto, modelyears: data })}.bind(this));
         }
     }
 
