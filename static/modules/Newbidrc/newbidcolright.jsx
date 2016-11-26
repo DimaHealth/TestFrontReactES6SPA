@@ -25,7 +25,7 @@ import Select from 'react-select'
           $.getJSON('https://test.uremont.com/auto/models?mark='+ e, function(data) {this.setState({selectedMark:e, models: data.map((option) => ({value: option.id, label: option.name})), modelyears: null})}.bind(this));
         }
         else{
-          this.setState({selectedMark:e, modelyears: null, models: null, selectedModel: null, selectedYear: null });
+          this.setState({selectedMark:e, modelyears: null, models: null, selectedModel: null, selectedYear: null, yearSelectState: null });
         }
     }
 
@@ -51,9 +51,9 @@ import Select from 'react-select'
               }
 
           })
-          this.setState({ selectedModel:e, modelyears: options, selectedYear: null });
+          this.setState({ selectedModel:e, modelyears: options, selectedYear: null, yearSelectState: null });
         } else {
-            this.setState({selectedModel:e, modelyears: null, selectedYear: null });
+            this.setState({selectedModel:e, modelyears: null, selectedYear: null, yearSelectState: null });
         }
     }
 
