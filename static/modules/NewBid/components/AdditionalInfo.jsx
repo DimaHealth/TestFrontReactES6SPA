@@ -7,17 +7,17 @@ import moment from 'moment'
 class AdditionalInfo extends React.Component {
     constructor(props) {
         super(props);
-        // this.state = {
-        //     value: '',
-        //     message: [],
-        //     startDate: this.props.startDate
-        // };
+        this.state = {
+            value: '',
+            message: [],
+            chosenDate: null
+        };
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(e) {
-        this.props.onAddInfoChange(e);
-//        this.setState({ startDate: e });
+        this.props.onAddInfoChange(e.format('DD/MM/YYYY'));
+        this.setState({ chosenDate: e });
     }
  
 //   handleChange: function(date) {
@@ -29,7 +29,7 @@ class AdditionalInfo extends React.Component {
         return (
                     <div className="rightColumn-dateofRem">
                         <p className="rightColumn-dateofRem_title">Желаемая дата ремонта</p>
-                       <DatePicker dateFormat="DD/MM/YYYY" selected={this.props.startDate} onChange={this.handleChange} minDate={moment()} placeholderText="Укажите дату" isClearable={true}/>
+                       <DatePicker dateFormat="DD/MM/YYYY" selected={this.state.chosenDate} onChange={this.handleChange} minDate={moment()} placeholderText="Укажите дату" isClearable={true}/>
                     </div>
                         
         );

@@ -11,10 +11,11 @@ import Select from 'react-select'
  class NewBidForm extends React.Component {
     constructor(props) {
          super(props);
-        this.state = { desiredDate: null, chosenMark: null, chosenModel: null, chosenYear: null, yearSelectState: null , message:''};
+        this.state = { desiredDate: null, chosenMark: null, chosenModel: null, chosenYear: null, message:''};
         this.onCarChange = this.onCarChange.bind(this);
         this.onMessageChange = this.onMessageChange.bind(this);
         this.onAddInfoChange = this.onAddInfoChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     onCarChange(x, y, z){
@@ -29,15 +30,21 @@ import Select from 'react-select'
         this.setState({desiredDate: e});
     }
 
+    onSubmit(e) {
+//        this.setState({desiredDate: e});
+        console.log(e);
+        event.preventDefault();
+    }
+
     render() {
 
         return (
-            <div className="rightColumn">
+            <form className="rightColumn"onSubmit = {this.onSubmit}>
                 <ChooseCar onCarChange = {this.onCarChange}/>
                 <WorkScope onMessageChange = {this.onMessageChange}/>
                 <AdditionalInfo onAddInfoChange = {this.onAddInfoChange}/>
                 <button className="rightColumn-dateofRem_titleSbmBtn " type="submit">Отправить</button>
-            </div>
+            </form>
 
         );
     }
