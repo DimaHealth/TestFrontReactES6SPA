@@ -31,7 +31,7 @@ import Select from 'react-select'
 
     onSubmit(e) {
         console.log(e);
-        event.preventDefault();
+        e.preventDefault();
     }
 
     render() {
