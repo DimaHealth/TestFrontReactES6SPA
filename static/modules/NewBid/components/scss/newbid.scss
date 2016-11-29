@@ -4,122 +4,142 @@
     width: 90%;
 }
 
-.leftColumn {
-    width: 30%;
-    float: left;
-    height: 100% !important;
-}
-
-.rightColumn {
-    width: 70%;
+.autoRow {
+    width: 100%;
     display: inline-block;
-    border-left: 1px solid black;
-    padding-bottom: 20px;
+    border-bottom: 1px solid black;
 }
 
-.rightColumn-markModYear,
-.rightColumn-whattoDo,
-.rightColumn-dateofRem {
+.autoRow-markModYear {
     padding-left: 20px;
+    border-left: 1px solid black;
 }
 
-.rightColumn-whattoDo_descWorksInfo {
+.autoRow-markModYear {
     width: 70%;
+    float: right;
+}
+
+.autoRow-auto {
+    float: left;
+}
+
+.worksRow-whattoDo {
+    border-left: 1px solid black;
+    height: 200px;
+    float: right;
+    width: 70%;
+}
+
+.worksRow-whattoDo_descWorksInfo {
+    width: 60%;
     height: 80px;
     resize: none;
     margin-bottom: 10px;
+    float: right;
+    margin-right: 35.5%;
+    margin-top: 25px;
 }
 
-.rightColumn-whattoDo_photo {
-    width: 65%;
+.worksRow-whattoDo_photo {
+    width: 51.1%;
     float: left;
     border: 1px solid black;
     margin-bottom: 20px;
+    margin-left: 4.5%;
 }
 
-.rightColumn-whattoDo_uploadPhotoBut {
+.worksRow-whattoDo_uploadPhotoBut {
     padding-top: 9px;
     padding-bottom: 7px;
 }
 
-.rightColumn-whattoDo_uploadPhoto {
-    margin-top: 0px;
-    // width: 20%;
-    display: inline-block;
+.worksRow-whattoDo_uploadPhoto {
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    float: right;
+    margin-right: 7.2%;
 }
 
-.rightColumn-markModYear {
-    margin-top: 2.7px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid black;
-    padding-bottom: 3px;
+.worksRow-whattoDo_photoDesc {
+    float: right;
 }
 
-.rightColumn-markModYear_markInfo,
-.rightColumn-markModYear_modInfo,
-.rightColumn-markModYear_yearInfo {
+.autoRow-markModYear_markInfo,
+.autoRow-markModYear_modInfo,
+.autoRow-markModYear_yearInfo {
     display: inline-block;
 }
 
-.leftColumn-auto {
-    margin-top: 20px;
-    padding-bottom: 5px;
+.submitRow-dateofRem {
+    float: right;
+    width: 70%;
+    height: 120px;
+    border-left: 1px solid black;
+}
+
+.worksRow {
     border-bottom: 1px solid black;
+    height: 200px;
+    margin-top: -5px;
 }
 
-.rightColumn-dateofRem {
-    margin-top: 20px;
+.worksRow-problem {
+    float: left;
+    padding-left: 13px;
 }
 
-.rightColumn-whattoDo {
-    border-bottom: 1px solid black;
-    padding-bottom: 29px;
-}
-
-.leftColumn-problem {
-    margin-bottom: 176px;
-}
-
-.leftColumn-inform {
-    border-top: 1px solid black;
-}
-
-.leftColumn-inform_title,
-.leftColumn-problem_title,
-.leftColumn-auto_title {
+.autoRow-auto_title {
     padding-left: 15px;
-        width: 300px;
+    width: 300px;
     height: 100%;
     display: inline-block;
     vertical-align: top;
 }
 
-.rightColumn-dateofRem_titleSbmBtn {
-    margin-top: 10px;
+.submitRow-dateofRem_titleSbmBtn {
+    margin-top: 7%;
     background-color: transparent;
     border: 1px solid black;
     display: block;
+    margin-left: 29%;
+    position: absolute;
 }
 
-.whattoDo-uploadPhotoBut-uploadButTitle {
+.submitRow-dateofRem_title {
+    margin-left: 35px;
+}
+
+.worksRow-uploadPhotoBut-uploadButTitle {
     background-color: transparent;
     border: 1px solid black;
 }
 
-.rightColumn-markModYear-select {
+.autoRow-markModYear-select {
     width: 25%;
     display: inline-block;
     margin-left: 2%;
     padding-top: 1%;
 }
 
-.chooseCar{
+.chooseCar {
     border-bottom: 1px solid #E6E6E6;
-    padding: 46px 30px 37px 30px;  
+    padding: 46px 30px 37px 30px;
 }
+
+.submitRow-info {
+    float: left;
+}
+
+.submitRow {
+    height: 120px;
+}
+
+.submitRow-dateofRem_date {
+    margin-left: 35px;
+}
+
 p {
     margin: 10px;
 }

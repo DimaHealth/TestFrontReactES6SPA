@@ -80,12 +80,12 @@ require('./scss/react-select.scss');
 //      $.getJSON('./static/json/auto brands.json', function(data) {this.setState({data: data})}.bind(this));
 
         return (
-            <div className="rightColumn">
-                <div className="leftColumn-auto"><p className="leftColumn-auto_title">Автомобиль</p></div>
-                <div className="rightColumn-markModYear">
-                    <Select className="rightColumn-markModYear-select" options = {this.state.marks} onChange={this.onMarkSelect} placeholder='Марка' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedMark}/>
-                    <Select className="rightColumn-markModYear-select" options = {this.state.models} onChange={this.onModelSelect} placeholder='Модель' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedModel}/>
-                    <Select className="rightColumn-markModYear-select" options = {this.state.modelyears} onChange={this.onYearSelect} placeholder='Год' clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.yearSelectState}/>
+            <div className="autoRow">
+                <div className="autoRow-auto"><p className="autoRow-auto_title">Автомобиль</p></div>
+                <div className="autoRow-markModYear">
+                    <Select className="autoRow-markModYear-select" options = {this.state.marks} onChange={this.onMarkSelect} placeholder='Марка' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedMark}/>
+                    <Select className="autoRow-markModYear-select" options = {this.state.models} onChange={this.onModelSelect} placeholder='Модель' simpleValue clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.selectedModel}/>
+                    <Select className="autoRow-markModYear-select" options = {this.state.modelyears} onChange={this.onYearSelect} placeholder='Год' clearable={true} name="selected-state" disabled={this.state.disabled} value={this.state.yearSelectState}/>
                 </div>
             </div>
 

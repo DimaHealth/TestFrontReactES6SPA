@@ -20,19 +20,25 @@ class AdditionalInfo extends React.Component {
         this.props.onAddInfoChange(e.format('DD/MM/YYYY'));
         this.setState({ chosenDate: e });
     }
- 
-//   handleChange: function(date) {
-//     this.setState({
-//       startDate: date
-//     });
-//   },
+
+    //   handleChange: function(date) {
+    //     this.setState({
+    //       startDate: date
+    //     });
+    //   },
     render() {
         return (
-                    <div className="rightColumn-dateofRem">
-                        <p className="rightColumn-dateofRem_title">Желаемая дата ремонта</p>
-                       <DatePicker dateFormat="DD/MM/YYYY" selected={this.state.chosenDate} onChange={this.handleChange} minDate={moment()} placeholderText="Укажите дату" isClearable={true}/>
+            <div>
+                <div className="submitRow-info">
+                    <p>Информация</p>
+                </div>
+                
+                    <div className="submitRow-dateofRem">
+                        <p className="submitRow-dateofRem_title">Желаемая дата ремонта</p>
+                        <DatePicker className="submitRow-dateofRem_date" dateFormat="DD/MM/YYYY" selected={this.state.chosenDate} onChange={this.handleChange} minDate={moment()} placeholderText="Укажите дату" isClearable={true} />
                     </div>
-                        
+               
+            </div>
         );
     }
 }

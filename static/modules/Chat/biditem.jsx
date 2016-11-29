@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class Tabs extends React.Component {
+class BidItem extends React.Component {
     render() {
         return (
-            <div className="left-column_tabs">
             <div className="tabs-first tab-styling">
                 <p> <span className="orderNumber">№4491</span> Chevrolet Avalanche <span className="dateValue">25.10.2016 </span> <span className="vinNumber">VIN не указан</span></p>
                 <p className = "bidWriting"> ybxt </p>
@@ -17,8 +16,7 @@ class Tabs extends React.Component {
                 <p> <span className="orderNumber">№5000</span> Bentley Continental Supersports <span className="dateValue">30.12.2016 </span> <span className="vinNumber">BY43WQ12BC54KK321</span></p>
                 <p className = "bidWriting"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores consequatur adipisicing elit. Dolores consequatur </p>
             </div>
-        </div>
         );
     }
 }
-export default Tabs;
+export default BidItem;

@@ -5,7 +5,10 @@ import Infotable from './Chat/infotable'
 import Chatform from './Chat/chatform'
 import Calculator from './Chat/calculator'
 import Messages from './Chat/messages'
-class Form extends React.Component {
+
+require('./chat/scss/chat.scss');
+
+class Chat extends React.Component {
     constructor(props) {
         super(props);
         this.state = { messages: [] };
@@ -21,7 +24,9 @@ class Form extends React.Component {
 	render() {
 		return (
     <div className="carcas">
-        <Tabs />
+        <BidItem />
+    </div>
+        <div className="left-column_tabs">
         <div className = "right-column_chat">
            <Infotable />
             <div className="chat-window">
@@ -38,4 +43,4 @@ class Form extends React.Component {
 	}
 }
 
-export default Form;
+export default Chat;
