@@ -42,7 +42,7 @@ import Select from 'react-select'
                 <WorkScope onMessageChange = {this.onMessageChange}/>
             <div className="submitRow">
                 <AdditionalInfo onAddInfoChange = {this.onAddInfoChange}/>
-                <button className="submitRow-dateofRem_titleSbmBtn " type="submit">Отправить</button>
+                <button className="submitRow-dateofRem_titleSbmBtn button_blue" type="submit">Отправить</button>
                 </div>
             </form>
 

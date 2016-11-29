@@ -88,6 +88,7 @@
 .worksRow-problem {
     float: left;
     padding-left: 13px;
+    color: red;
 }
 
 .autoRow-auto_title {
@@ -96,6 +97,12 @@
     height: 100%;
     display: inline-block;
     vertical-align: top;
+    color: red;
+}
+
+.submitRow-info {
+    float: left;
+    margin-left: 15px;
 }
 
 .submitRow-dateofRem_titleSbmBtn {
@@ -113,7 +120,7 @@
 
 .worksRow-uploadPhotoBut-uploadButTitle {
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid #4BC5FF;
 }
 
 .autoRow-markModYear-select {
@@ -123,13 +130,17 @@
     padding-top: 1%;
 }
 
+textarea.todo[name="work"] {
+    border-color: red;
+}
+
+textarea.todo[name="work"]:focus {
+    border-color: #4BC5FF;
+}
+
 .chooseCar {
     border-bottom: 1px solid #E6E6E6;
     padding: 46px 30px 37px 30px;
-}
-
-.submitRow-info {
-    float: left;
 }
 
 .submitRow {
@@ -142,4 +153,29 @@
 
 p {
     margin: 10px;
+}
+
+.submitRow-dateofRem_titleSbmBtn:hover {
+    background: #82D3FF;
+    border-color: #82D3FF;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.button_blue {
+    background: #40bcff;
+    border-style: Solid;
+
+    border-width: 1px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border: 2px solid #40bcff;
+}
+
+.submitRow-dateofRem_titleSbmBtn {
+    cursor: pointer;
+    transition: background, color, 150ms ease-out;
+    vertical-align: middle;
 }

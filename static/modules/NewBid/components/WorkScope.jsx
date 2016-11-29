@@ -19,7 +19,7 @@ class WorkScope extends React.Component {
                 </div>
                 <div className="worksRow-whattoDo">
                     <div className="worksRow-whattoDo_descWorks">
-                        <textarea className="worksRow-whattoDo_descWorksInfo" onChange={this.handleMessageChange} placeholder="Опишите работы которые необходимо сделать" type="text" rows="6" cols="6"></textarea>
+                        <textarea className="worksRow-whattoDo_descWorksInfo todo" onChange={this.handleMessageChange} placeholder="Опишите работы которые необходимо сделать"  name="work" type="text" rows="6" cols="6"></textarea>
                     </div>
                     <div className="worksRow-whattoDo_photoDesc">
                         <div className="worksRow-whattoDo_photo">
