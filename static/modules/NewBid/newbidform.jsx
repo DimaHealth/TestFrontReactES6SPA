@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import ChooseCar from './components/choosecar'
 import WorkScope from './components/workscope'
 import AdditionalInfo from './components/additionalinfo'
-import Submit from './components/submit'
 import moment from 'moment'
 import Select from 'react-select'
 
