@@ -30,7 +30,6 @@ import Select from 'react-select'
     }
 
     onSubmit(e) {
-//        this.setState({desiredDate: e});
         console.log(e);
         event.preventDefault();
     }
@@ -38,7 +37,7 @@ import Select from 'react-select'
     render() {
 
         return (
-            <form className="rightColumn"onSubmit = {this.onSubmit}>
+            <form className="rightColumn" action='' onSubmit = {this.onSubmit}>
                 <ChooseCar className="chooseCar" onCarChange = {this.onCarChange}/>
                 <WorkScope onMessageChange = {this.onMessageChange}/>
                 <AdditionalInfo onAddInfoChange = {this.onAddInfoChange}/>
