@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
 
+require('./scss/react-datepicker.min.scss');
 
 class AdditionalInfo extends React.Component {
     constructor(props) {

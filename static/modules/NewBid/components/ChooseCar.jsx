@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import moment from 'moment'
 import Select from 'react-select'
 
+require('./scss/react-select.scss');
 
  class ChooseCar extends React.Component {
      constructor(props) {

@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import NewBidForm from './NewBid/newbidform'
 
+require("./newbid/components/scss/newbid.scss");
 
 class NewBidApp extends React.Component {
 

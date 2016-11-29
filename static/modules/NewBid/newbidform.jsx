@@ -40,7 +40,7 @@ import Select from 'react-select'
 
         return (
             <form className="rightColumn"onSubmit = {this.onSubmit}>
-                <ChooseCar onCarChange = {this.onCarChange}/>
+                <ChooseCar className="chooseCar" onCarChange = {this.onCarChange}/>
                 <WorkScope onMessageChange = {this.onMessageChange}/>
                 <AdditionalInfo onAddInfoChange = {this.onAddInfoChange}/>
                 <button className="rightColumn-dateofRem_titleSbmBtn " type="submit">Отправить</button>

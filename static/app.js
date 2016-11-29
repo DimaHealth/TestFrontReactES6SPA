@@ -6,16 +6,19 @@ import NewBidApp from './modules/newbidapp'
 import BidkiList from './modules/bidslist'
 const ACTIVE = { color: 'red' }
 
+require("./main.scss");
+
 const App = ({ children }) => (
   <div>
     <h1>APP!</h1>
-    <ul className="nav nav-tabs">
-      <li><Link to="listofbids" activeStyle={ACTIVE}>Список заявок</Link></li>
-      <li><Link to="chat"       activeStyle={ACTIVE}>Чат</Link></li>
-      <li><Link to="newbid"     activeStyle={ACTIVE}>Новая заявка</Link></li>
-    </ul>
-
-    {children}
+    <div className='container'>
+      <ul className="nav nav-tabs">
+        <li><Link to="listofbids" activeStyle={ACTIVE}>Список заявок</Link></li>
+        <li><Link to="chat"       activeStyle={ACTIVE}>Чат</Link></li>
+        <li><Link to="newbid"     activeStyle={ACTIVE}>Новая заявка</Link></li>
+      </ul>
+      {children}
+    </div>
   </div>
 )
 
