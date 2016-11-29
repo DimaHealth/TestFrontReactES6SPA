@@ -4,12 +4,14 @@ import ReactDOM from 'react-dom'
 class Infotable extends React.Component {
     render() {
         return (
+            <div className="tab-details">
             <p>
                 <span className="orderNumber-details"></span>
                 <span className="icon"> </span>
                 <span className="vinNumber"></span>
             </p>
             <p className="bidWriting-details"></p>
+
               <table className="chat-window_table">
               <tbody>
                 <tr>
@@ -60,6 +62,7 @@ class Infotable extends React.Component {
                 </tr>
                 </tbody>
             </table>
+            </div>
         );
     }
 }
