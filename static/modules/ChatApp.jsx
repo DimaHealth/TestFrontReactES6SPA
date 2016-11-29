@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Tabs from './Chat/tabs'
+import BidItem from './Chat/biditem'
 import Infotable from './Chat/infotable'
 import Chatform from './Chat/chatform'
 import Calculator from './Chat/calculator'
@@ -8,7 +8,7 @@ import Messages from './Chat/messages'
 
 require('./chat/scss/chat.scss');
 
-class Chat extends React.Component {
+class ChatApp extends React.Component {
     constructor(props) {
         super(props);
         this.state = { messages: [] };
@@ -24,23 +24,23 @@ class Chat extends React.Component {
 	render() {
 		return (
     <div className="carcas">
+      <div className="left-column_tabs">
         <BidItem />
-    </div>
-        <div className="left-column_tabs">
-        <div className = "right-column_chat">
-           <Infotable />
-            <div className="chat-window">
-            <p className="entry-message"> <span> Оганнес </span><br/>Привет родной, как дела? </p>
-                    <Messages messages={this.state.messages} className="message-block_example"/>
-            </div>
-            <div className="calculator-and-chatTextarea">
-                <Calculator />
-                <Chatform  onSubmit={this.handleSubmit}/>
-            </div>
+      </div>
+      <div className = "right-column_chat">
+        <Infotable />
+        <div className="chat-window">
+          <p className="entry-message"> <span> Оганнес </span><br/>Привет родной, как дела? </p>
+            <Messages messages={this.state.messages} className="message-block_example"/>
         </div>
-   </div>
+        <div className="calculator-and-chatTextarea">
+          <Calculator />
+          <Chatform  onSubmit={this.handleSubmit}/>
+        </div>
+      </div>
+    </div>
 		);
 	}
 }
 
-export default Chat;
+export default ChatApp;
