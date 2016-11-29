@@ -115,28 +115,33 @@ body {
 }
 
 .carcas {
-    width: 90%;
-    height: 835px;
+    height: 850px;
     margin: 0 auto;
-    border: 1px solid black;
+    margin-top: -10px;
+    border: 1px solid #c0c0c0;
+    border-top: none;
     margin-bottom: 5px;
 }
-.nav{
+
+.nav {
     background: #E6E6E6;
 }
-    
+
 .left-column_tabs {
     float: left;
     width: 35%;
     margin: 10px;
     padding: 5px;
-    border: 1px solid black;
+    height: 838.4px;
+    border: 1px solid #ddd;
+    border-bottom: none;
 }
 
 .tab-styling {
     margin: 7px;
     padding: 7px;
-    border: 1px dashed black;
+    border: 1px solid #ddd;
+    background: #FFEED9;
 }
 
 .tab-styling:hover {
@@ -163,11 +168,11 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 3px;
+    border-bottom: 1px solid #c0c0c0;
 }
 
 .autoInfo,
 .bidInfo {
-    border: 1px solid black;
     border-bottom: none;
     padding: 0px 5px 0px 5px;
     width: 50%;
@@ -175,12 +180,13 @@ body {
 
 .autoInfo-text,
 .bidInfo-text {
-    font-family: 'Tahoma';
+    font-family: "BlissPro-Bold";
+    font-size: 1.15em;
 }
 
 .autoInfo-text_title,
 .bidInfo-text_title {
-    color: grey;
+    color: #B3B3B3;
 }
 
 .chat-window {
@@ -189,7 +195,6 @@ body {
     margin-left: 37.5%;
     overflow: auto;
     margin-top: -3px;
-    border: 1px solid black;
 }
 
 .message-block_example {
@@ -225,15 +230,16 @@ body {
 }
 
 .go {
-    margin-left: 500px;
+    margin-left: 627px;
     margin-top: 10px;
-    background: transparent;
-    padding: 5px 15px 5px 15px;
-    border: 1px solid black;
-    border-radius: 2px;
+    background: #40bcff;
+    padding: 4px 25px 4px 25px;
+    border: 1px solid #40bcff;
+    border-radius: 3px;
     transition: .6s;
     -webkit-transition: .6s;
-    font-family: Tahoma;
+    font-family: 'BlissPro';
+    color: white;
 }
 
 .go:hover {
@@ -241,6 +247,7 @@ body {
     -webkit-transition: .6s;
     color: white;
     background: black;
+    border: 1px solid black;
 }
 
 .resultRow input {
@@ -252,7 +259,7 @@ body {
     margin-right: 30px;
     overflow: auto;
     resize: none;
-    width: 400px;
+    width: 300px;
     height: 120px;
     background: #f6f6f6;
     border: 1px solid #cecece;
@@ -271,8 +278,8 @@ body {
     padding: 6px 0 4px 10px;
     border: 1px solid #cecece;
     background: #F6F6f6;
-    border-radius: 8px;
     outline: none;
+    margin-right: 10px;
 }
 
 .sendMessage {
@@ -330,11 +337,6 @@ body {
     margin: 0 auto;
 }
 
-.listBidCarcas-bidTable tr,
-td {
-    border: 1px solid #000;
-}
-
 .listBidCarcas-bidTable {
     border: 1px solid #000;
 }
@@ -344,25 +346,23 @@ td {
 }
 
 .send-messages {
-    border: 1px solid black;
     border-radius: 3px;
-    width: 350px !important;
-    padding: 5px 10px 5px 10px;
+    width: 370px !important;
+    padding: 15px 10px 15px 10px;
     font-weight: bold;
     overflow-wrap: break-word;
     text-align: left;
-    margin-left: 50%;
     background: #fff1e3;
+    float: right;
+    color: #6E6E6E;
 }
 
 .entry-message {
-    border: 1px solid black;
     padding: 5px 10px 5px 10px;
     width: 350px !important;
     text-align: left;
     overflow-wrap: break-word;
     background: #E1F7FF;
-    border-radius: 3px;
 }
 
 .entry-message span {
