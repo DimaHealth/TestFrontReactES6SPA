@@ -99,6 +99,11 @@ body {
     padding: 0 20px;
 }
 
+.nav-tabs_active {
+    border-color: #eee #eee #ddd !important;
+    background: #fff !important;
+}
+
 .nav-tabs>li>a:hover {
     border-color: #eee #eee #ddd;
     background: #fff;
