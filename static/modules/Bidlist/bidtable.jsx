@@ -34,7 +34,7 @@ class Bidtable extends React.Component {
         }
         
         if(rows.length==0)
-            return (<p>Заявки не найдены</p>);
+            return (<p className = "bidsNotFoundText">Заявки не найдены</p>);
         else
             return(<table className="listBidCarcas-bidTable" cols={7} rows={4}>
                     <thead>
@@ -77,4 +77,3 @@ var BIDS = [
 ];
 
 export default Bidtable;
-

@@ -11,16 +11,16 @@ class Filtertable extends React.Component {
     }
 
     searchChanged(e){
-        if (e.target.value.match(/[0-9]/)){
-            this.props.searchUpdate(e.target.value);
-        }
-        else{
-            this.props.searchUpdate(0);
-        }
+        if (!e.target.value.match(/[^0-9]/g)){
+      if (e.target.value==""){
+        e.target.value=0;
+      }
+    this.props.onChange(Number(e.target.value));
+    }
     }
 
     render() {
-        var searchIDReqest = this.state.search;
+        var searchIDReqest = this.props.value;
         return (
         <table className="filterTable">
             <tbody>
@@ -31,7 +31,7 @@ class Filtertable extends React.Component {
                         </p>
                     </td>
                     <td>
-                        <input ref="filterInput" onChange = {this.searchChanged} type="number"/>
+                        <input ref="filterInput" onChange = {this.searchChanged} value = {searchIDReqest}/>
                     </td>
                 </tr>
              </tbody>

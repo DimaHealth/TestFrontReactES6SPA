@@ -32,7 +32,7 @@ class BidRows extends React.Component {
            return(
             <tbody>
                 <tr className="table-row">
-                    <td className="table-row_column">
+                    <td className="bidNumber">
                         {this.props.number}
                     </td>
                     <td className="table-row_column">
@@ -60,15 +60,15 @@ class BidRows extends React.Component {
         else {
             return(
                 <tbody>
-                    <tr className="table-row">
+                    <tr className="table-row_details-header">
                         <td colSpan="6" className="table-row_column">
-                            <p>Заявка №<span className="row-column_numOfBid">{this.props.number}</span></p>
+                            <p><span className="row-column_numOfBid">Заявка №{this.props.number}</span></p>
                         </td>
                         <td>
                             <button className="row-column_hideDetailsButton" onClick={this.handleChange}>▲</button>
                         </td>
                     </tr> 
-                    <tr className="table-row">
+                    <tr className="details">
                         <td className="table-row_column" colSpan={3}>
                             <p>Дата заявки: <span className="row-column_date">{this.props.date}</span></p>
                             <p>Описание: <span className="row-column_description"> {this.props.desc}</span></p>
@@ -79,10 +79,12 @@ class BidRows extends React.Component {
                             <p>Статус: <span className="row-column_status"> {this.props.status}</span></p>
                         </td>
                         <td className="table-row_column" colSpan={3}>
-                            <p className="row-column_carmodel">{this.props.car}</p>
-                            <p>Год выпуска: <span className="row-column_year"> {this.props.year} </span></p>
-                            <p>Пробег: <span className="row-column_distance"> {this.props.year}</span></p>
-                            <p>Двигатель: <span className="row-column_engineVolume"> {this.props.engine}</span></p>
+                            <center>
+                                <p className="row-column_carmodel">{this.props.car}</p>
+                                <p>Год выпуска: <span className="row-column_year"> {this.props.year} </span></p>
+                                <p>Пробег: <span className="row-column_distance"> {this.props.year}</span></p>
+                                <p>Двигатель: <span className="row-column_engineVolume"> {this.props.engine}</span></p>
+                            </center>
                         </td>
                     </tr>
                 </tbody>

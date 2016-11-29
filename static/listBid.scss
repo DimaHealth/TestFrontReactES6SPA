@@ -1,29 +1,112 @@
 .listBidCarcas {
-    width: 50%;
+    width: 90%;
     height: auto;
-    border: 1px solid #000;
+    border: 1px solid transparent;
     padding: 5px;
     margin: 0 auto;
 }
 
-.listBidCarcas-filterTable {
-    border: 1px solid #000;
+.filterTable {
+    border: 1px solid transparent;
     margin-bottom: 25px;
+    color: #808080;
+    font-weight: 500;
 }
 
-.responseButton {
+.listBidCarcas-bidTable {
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.listBidCarcas-bidTable_headTable {
+    font-weight: bold;
+    background: #E6E6E6;
+    height: 68px;
+    padding-left: 1em;
+}
+
+.bidNumber {
+    width: 7% !important;
+    padding-left: 10px;
+    color: #40bcff;
+    font-size: 1em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table-row {
+    background: #F5F5F5;
+}
+
+.table-row_column {
+    width: 18%;
+    color: #808080;
+    font-size: 1em;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table-row:hover {
+    transition: 0.5s ease;
+    background: #f9e9d2;
+    cursor: pointer;
+}
+
+.details {
+    transition: none;
+    background: none;
+    cursor: pointer;
+}
+
+.row-column_numOfBid {
+    color: #40bcff;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.row-column_showDetailsButton {
     background-color: transparent;
-    border: 1px solid #000;
+    border: 1px solid transparent;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.listBidCarcas-bidTable {
-    margin: 0 auto;
+.row-column_hideDetailsButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #82D3FF;
 }
 
-.listBidCarcas-bidTable_headTable {
-    font-weight: bold;
+.row-column_responseButton {
+    background-color: transparent;
+    width: 81px;
+    height: 38px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #82D3FF;
+    border: 1px solid #82D3FF;
+    color: #fff;
 }
+
+.row-column_carmodel {
+    font-weight: 500;
+}
+
+.listBidCarcas-bidTable_headTable td {
+    padding-left: 10px;
+}
+
+.bidsNotFoundText {
+    font-size: 2em;
+    color: #808080;
+}
+
+//071 312 27 02
