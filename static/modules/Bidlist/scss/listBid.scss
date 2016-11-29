@@ -1,9 +1,10 @@
 .listBidCarcas {
-    width: 90%;
+    width: 100%;
     height: auto;
     border: 1px solid transparent;
     padding: 5px;
     margin: 0 auto;
+    font-size: 14px !important;
 }
 
 .filterTable {
@@ -21,8 +22,9 @@
 .listBidCarcas-bidTable_headTable {
     font-weight: bold;
     background: #E6E6E6;
+    padding: 23px 0px;
     height: 68px;
-    padding-left: 1em;
+    color: #808080;
 }
 
 .bidNumber {
@@ -36,6 +38,8 @@
 
 .table-row {
     background: #F5F5F5;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .table-row_column {
@@ -44,6 +48,9 @@
     font-size: 1em;
     text-align: left;
     vertical-align: middle;
+    padding: 23px 0px;
+    min-height: 70px;
+    transition: all 0.5s ease;
 }
 
 .table-row:hover {
@@ -61,7 +68,7 @@
 .row-column_numOfBid {
     color: #40bcff;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 .row-column_showDetailsButton {
@@ -86,13 +93,18 @@
 .row-column_responseButton {
     width: 81px;
     height: 38px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
     background-color: #82D3FF;
+    -webkit-border-radius: 2px;
     border: 1px solid #82D3FF;
+    letter-spacing: 0.28px;
+    line-height: 20px;
+    font-weight: normal;
     color: #fff;
+}
+
+.table-row_details-header {
+    background: #fff;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .row-column_carmodel {

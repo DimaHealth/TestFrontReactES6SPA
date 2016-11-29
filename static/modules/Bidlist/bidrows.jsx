@@ -25,26 +25,25 @@ class BidRows extends React.Component {
         this.setState({ opened: false });
     }
     
-
     render() {
         if (!this.state.opened) 
         {
            return(
             <tbody>
                 <tr className="table-row">
-                    <td className="bidNumber">
+                    <td className="bidNumber" onClick={this.handleSubmit}>
                         {this.props.number}
                     </td>
-                    <td className="table-row_column">
+                    <td className="table-row_column" onClick={this.handleSubmit}>
                         {this.props.date}
                     </td>
-                    <td className="table-row_column">
+                    <td className="table-row_column" onClick={this.handleSubmit}>
                         {this.props.car}
                     </td>
-                    <td className="table-row_column">
+                    <td className="table-row_column" onClick={this.handleSubmit}>
                         {this.props.desc}
                     </td>
-                    <td className="table-row_column">
+                    <td className="table-row_column" onClick={this.handleSubmit}>
                         {this.props.message}
                     </td>
                     <td className="table-row_column">
@@ -60,7 +59,7 @@ class BidRows extends React.Component {
         else {
             return(
                 <tbody>
-                    <tr className="table-row_details-header">
+                    <tr className="table-row table-row_details-header" onClick={this.handleChange}>
                         <td colSpan="6" className="table-row_column">
                             <p><span className="row-column_numOfBid">Заявка №{this.props.number}</span></p>
                         </td>
