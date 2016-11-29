@@ -29,7 +29,7 @@ class Chatform extends React.Component {
 		<textarea required className="input-form" rows={6} cols={35}  type = "text" placeholder = "Вводите текст" value={this.state.value}
 		onChange={this.handleChange}/>
 		<button className="go" onClick={this.handleSubmit}>
-		Поехали
+		Отправить
 		</button>
 		</div>
 		
