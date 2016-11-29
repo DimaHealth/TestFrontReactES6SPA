@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router'
-import Form from './modules/sendmessage'
+import Form from './modules/chatapp'
 import NewBidApp from './modules/newbidapp'
 import BidkiList from './modules/bidlistapp'
 
@@ -31,7 +31,7 @@ const Listofbids = () => (
 
 const Chat = () => (
   <div id='send-message_form'>
-    <Form />
+    <Chat />
   </div>
 )
 
