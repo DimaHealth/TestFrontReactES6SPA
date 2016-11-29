@@ -1,5 +1,117 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'BlissPro';
+}
+
+@font-face {
+    font-family: "uremont";
+    src: url("/static/fonts/uremont.woff") format("woff")
+}
+
+@font-face {
+    font-family: "BlissPro";
+    src: local("BlissPro");
+    // src: url("static/fonts/BlissPro_gdi.eot");
+    src: url("/static/fonts/BlissPro_gdi.woff") format("woff");
+    // src: url("static/fonts/BlissPro_gdi.ttf") format("truetype");
+    // src: url("static/fonts/BlissPro_gdi.svg#BlissPro_gdi") format("svg");
+    // src: url("static/fonts/BlissPro_gdi.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "BlissPro-Bold";
+    src: local("BlissPro-Bold");
+    // src: url("static/fonts/BlissPro-Bold_gdi.eot");
+    src: url("/static/fonts/BlissPro-Bold_gdi.woff") format("woff");
+    // src: url("static/fonts/BlissPro-Bold_gdi.ttf") format("truetype");
+    // src: url("static/fonts/BlissPro-Bold_gdi.svg#BlissPro-Bold_gdi") format("svg");
+    // src: url("static/fonts/BlissPro-Bold_gdi.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "BlissPro-Italic";
+    src: local("BlissPro-Italic");
+    // src: url("static/fonts/BlissPro-Italic_gdi.eot");
+    src: url("/static/fonts/BlissPro-Italic_gdi.woff") format("woff");
+    // src: url("static/fonts/BlissPro-Italic_gdi.ttf") format("truetype");
+    // src: url("static/fonts/BlissPro-Italic_gdi.svg#BlissPro-Italic_gdi") format("svg");
+    // src: url("static/fonts/BlissPro-Italic_gdi.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "BlissPro-Light";
+    src: local("BlissPro-Light");
+    // src: url("static/fonts/BlissPro-Light_gdi.eot");
+    src: url("/static/fonts/BlissPro-Light_gdi.woff") format("woff");
+    // src: url("static/fonts/BlissPro-Light_gdi.ttf") format("truetype");
+    // src: url("static/fonts/BlissPro-Light_gdi.svg#BlissPro-Light_gdi") format("svg");
+    // src: url("static/fonts/BlissPro-Light_gdi.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "BlissPro-LightItalic";
+    src: local("BlissPro-LightItalic");
+    // src: url("static/fonts/BlissPro-LightItalic_gdi.eot");
+    src: url("/static/fonts/BlissPro-LightItalic_gdi.woff") format("woff");
+    // src: url("static/fonts/BlissPro-LightItalic_gdi.ttf") format("truetype");
+    // src: url("static/fonts/BlissPro-LightItalic_gdi.svg#BlissPro-LightItalic_gdi") format("svg");
+    // src: url("static/fonts/BlissPro-LightItalic_gdi.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "BlissPro-Medium";
+    src: local("BlissPro-Medium");
+    // src: url("static/fonts/BlissPro-Medium_gdi.eot");
+    src: url("/static/fonts/BlissPro-Medium_gdi.woff") format("woff");
+    // src: url("static/fonts/BlissPro-Medium_gdi.ttf") format("truetype");
+    // src: url("static/fonts/BlissPro-Medium_gdi.svg#BlissPro-Medium_gdi") format("svg");
+    // src: url("static/fonts/BlissPro-Medium_gdi.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "BlissPro-MediumItalic";
+    src: local("BlissPro-MediumItalic");
+    // src: url("static/fonts/BlissPro-MediumItalic_gdi.eot");
+    src: url("/static/fonts/BlissPro-MediumItalic_gdi.woff") format("woff");
+    // src: url("static/fonts/BlissPro-MediumItalic_gdi.ttf") format("truetype");
+    // src: url("static/fonts/BlissPro-MediumItalic_gdi.svg#BlissPro-MediumItalic_gdi") format("svg");
+    // src: url("static/fonts/BlissPro-MediumItalic_gdi.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "BlissPro-Heavy";
+    src: local("BlissPro-Heavy");
+    // src: url("static/fonts/BlissPro-Heavy_gdi.eot");
+    src: url("/static/fonts/BlissPro-Heavy_gdi.woff") format("woff");
+    // src: url("static/fonts/BlissPro-Heavy_gdi.ttf") format("truetype");
+    // src: url("static/fonts/BlissPro-Heavy_gdi.svg#BlissPro-Heavy_gdi") format("svg");
+    // src: url("static/fonts/BlissPro-Heavy_gdi.otf") format("opentype")
+}
+
+.container {
+    min-width: 1280px;
+    max-width: 1280px;
+    width: 1280px;
+    padding: 0 30px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd;
+    background: #fff;
+}
+
+.nav-tabs>li>a {
+    position: relative;
+    cursor: pointer;
+    padding: 12px 25px;
+    float: left;
+    font-size: 1.12em;
+    line-height: 2.2em;
+    color: #4D4D4D;
 }
 
 .carcas {
@@ -9,7 +121,10 @@ body {
     border: 1px solid black;
     margin-bottom: 5px;
 }
-
+.nav{
+    background: #E6E6E6;
+}
+    
 .left-column_tabs {
     float: left;
     width: 35%;
