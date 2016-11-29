@@ -4,6 +4,12 @@ import ReactDOM from 'react-dom'
 class Infotable extends React.Component {
     render() {
         return (
+            <p>
+                <span className="orderNumber-details"></span>
+                <span className="icon"> </span>
+                <span className="vinNumber"></span>
+            </p>
+            <p className="bidWriting-details"></p>
               <table className="chat-window_table">
               <tbody>
                 <tr>
