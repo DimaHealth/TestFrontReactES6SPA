@@ -5,119 +5,103 @@
     padding: 5px;
     margin: 0 auto;
     font-size: 14px !important;
-}
-
-.filterTable {
-    border: 1px solid transparent;
-    margin-bottom: 25px;
-    color: #808080;
-    font-weight: 500;
-}
-
-.listBidCarcas-bidTable {
-    margin: 0 auto;
-    font-weight: 500;
-}
-
-.listBidCarcas-bidTable_headTable {
-    font-weight: bold;
-    background: #E6E6E6;
-    padding: 23px 0px;
-    height: 68px;
-    color: #808080;
-}
-
-.bidNumber {
-    width: 7% !important;
-    padding-left: 10px;
-    color: #40bcff;
-    font-size: 1em;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.table-row {
-    background: #F5F5F5;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.table-row_column {
-    width: 18%;
-    color: #808080;
-    font-size: 1em;
-    text-align: left;
-    vertical-align: middle;
-    padding: 23px 0px;
-    min-height: 70px;
-    transition: all 0.5s ease;
-}
-
-.table-row:hover {
-    transition: 0.5s ease;
-    background: #f9e9d2;
-    cursor: pointer;
-}
-
-.details {
-    transition: none;
-    background: none;
-    cursor: pointer;
-}
-
-.row-column_numOfBid {
-    color: #40bcff;
-    font-weight: 700;
-    font-size: 1.5em;
-}
-
-.row-column_showDetailsButton {
-    background-color: transparent;
-    border: 1px solid transparent;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.row-column_hideDetailsButton {
-    background-color: transparent;
-    border: 1px solid transparent;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #82D3FF;
-}
-
-.row-column_responseButton {
-    width: 81px;
-    height: 38px;
-    background-color: #82D3FF;
-    -webkit-border-radius: 2px;
-    border: 1px solid #82D3FF;
-    letter-spacing: 0.28px;
-    line-height: 20px;
-    font-weight: normal;
-    color: #fff;
-}
-
-.table-row_details-header {
-    background: #fff;
-    border-bottom: 1px solid #E6E6E6;
-}
-
-.row-column_carmodel {
-    font-weight: 500;
-}
-
-.listBidCarcas-bidTable_headTable td {
-    padding-left: 10px;
-}
-
-.bidsNotFoundText {
-    font-size: 2em;
-    color: #808080;
+    .bidsNotFoundText {
+        font-size: 2em;
+        color: #808080;
+    }
+    .filterTable {
+        border: 1px solid transparent;
+        margin-bottom: 25px;
+        color: #808080;
+        font-weight: 500;
+    }
+    .listBidCarcas-bidTable {
+        margin: 0 auto;
+        font-weight: 500;
+        .listBidCarcas-bidTable_headTable {
+            font-weight: bold;
+            background: #E6E6E6;
+            padding: 23px 0px;
+            height: 68px;
+            color: #808080;
+            .listBidCarcas-bidTable_headTable td {
+                padding-left: 10px;
+            }
+        }
+        .table-row {
+            background: #F5F5F5;
+            font-size: 1em;
+            font-weight: bold;
+            .bidNumber {
+                width: 7% !important;
+                padding-left: 10px;
+                color: #40bcff;
+                font-size: 1em;
+                text-align: left;
+                vertical-align: middle;
+            }
+            .row-column_hideDetailsButton {
+                background-color: transparent;
+                border: 1px solid transparent;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 5px;
+                margin-right: 5px;
+                color: #82D3FF;
+            }
+            .row-column_showDetailsButton {
+                background-color: transparent;
+                border: 1px solid transparent;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .table-row_column {
+                width: 18%;
+                color: #808080;
+                font-size: 1em;
+                text-align: left;
+                vertical-align: middle;
+                padding: 23px 0px;
+                min-height: 70px;
+                transition: all 0.5s ease;
+                .row-column_numOfBid {
+                    color: #40bcff;
+                    font-weight: 700;
+                    font-size: 1.5em;
+                }
+                .row-column_responseButton {
+                    width: 81px;
+                    height: 38px;
+                    background-color: #82D3FF;
+                    -webkit-border-radius: 2px;
+                    border: 1px solid #82D3FF;
+                    letter-spacing: 0.28px;
+                    line-height: 20px;
+                    font-weight: normal;
+                    color: #fff;
+                }
+            }
+            .table-row:hover {
+                transition: 0.5s ease;
+                background: #f9e9d2;
+                cursor: pointer;
+            }
+            .details {
+                transition: none;
+                background: none;
+                cursor: pointer;
+                .row-column_carmodel {
+                    font-weight: 500;
+                }
+            }
+            .table-row_details-header {
+                background: #fff;
+                border-bottom: 1px solid #E6E6E6;
+            }
+        }
+    }
 }
 
 //071 312 27 02
