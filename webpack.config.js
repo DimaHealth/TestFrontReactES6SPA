@@ -7,7 +7,7 @@ webpackConfig = {
     context: __dirname,
     entry: {
         bundle: './static/app.js',
-//        styles: ['./static/main.scss']
+        //        styles: ['./static/main.scss']
     },
     output: {
         path: './static/build',
@@ -42,7 +42,7 @@ webpackConfig = {
         ]
     },
     plugins: [
-            new ExtractTextPlugin('styles.css', {allChunks: true})
+            new ExtractTextPlugin('styles.css', { allChunks: true })
         ]
         //  devServer: {
         //    historyApiFallback: true,
