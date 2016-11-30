@@ -2,13 +2,24 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import BidRows from './bidrows'
 
+
 class Bidtable extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            bids: BIDS,
+            bids: []
         }
     }
+
+    componentDidMount(){ 
+        $.getJSON("./static/json/bidslist.json", 
+            function(data) {
+                this.setState({bids: data})
+ //               console.log(this.state.bids)
+            }.bind(this));
+        }
+    
+
     render() {
         var rows = [], content = [];
         if (this.props.filter==0) {
@@ -32,6 +43,7 @@ class Bidtable extends React.Component {
 
             });
         }
+        console.log(rows);
         
         if(rows.length==0)
             return (<p className = "bidsNotFoundText">Заявки не найдены</p>);
