@@ -11,12 +11,14 @@
         margin: 10px;
         padding: 5px;
         height: 838.4px;
-        border: 1px solid #ddd;
         border-bottom: none;
         overflow-y: auto;
         .tab-styling {
             border: 1px solid #ddd;
             cursor: default;
+            p {
+                margin: 5px;
+            }
             .orderNumber {
                 font-size: 1.25em;
                 color: #40bcff;
