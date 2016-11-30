@@ -13,6 +13,7 @@ class BidItemInfo extends React.Component {
 
   render() {
     if(this.props.bidinfo){
+      var date = new Date(Number(this.props.bidinfo.bid_info.current_time)*1000);
     return (
       <div className = "right-column_chat">
           <div className="tab-details">
@@ -24,24 +25,23 @@ class BidItemInfo extends React.Component {
               <tbody>
                 <tr>
                   <td className="autoInfo">
-                    <p className="autoInfo-text"><span className="autoInfo-text_title">Год выпуска:</span> 2016</p>
-                    <p className="autoInfo-text"><span className="autoInfo-text_title">Тип кузова:</span> Нет данных</p>
-                    <p className="autoInfo-text"><span className="autoInfo-text_title">Трансмиссия:</span> Нет данных</p>
-                    <p className="autoInfo-text"><span className="autoInfo-text_title">Контактное имя:</span> Рудиков Роман Андреевич</p>
+                    <p className="autoInfo-text"><span className="autoInfo-text_title">Год выпуска: </span>{this.props.bidinfo.bid_info.auto_year}</p>
+                    <p className="autoInfo-text"><span className="autoInfo-text_title">Тип кузова: </span>{this.props.bidinfo.bid_info.auto_modify_name}</p>
+                    <p className="autoInfo-text"><span className="autoInfo-text_title">Трансмиссия:</span>{this.props.bidinfo.bid_info.auto_transmission_value}</p>
+                    <p className="autoInfo-text"><span className="autoInfo-text_title">Контактное имя: </span>{this.props.bidinfo.bid_info.u_name}</p>
                   </td>
                   <td className="bidInfo">
-                    <p className="bidInfo-text"><span className="autoInfo-text_title">Дата заявки:</span> 20.10.2016 12:51</p>
-                    <p className="bidInfo-text"><span className="autoInfo-text_title">Технический статус:</span> Оценка стоимости</p>
-                    <p className="bidInfo-text"><span className="autoInfo-text_title">Регион:</span> Москва и МО</p>
-                    <p className="bidInfo-text"><span className="autoInfo-text_title">Город:</span> Москва</p>
+                    <p className="bidInfo-text"><span className="autoInfo-text_title">Дата заявки: </span>{date.getDate()}.{date.getMonth()}.{date.getFullYear()} {date.getHours()}:{date.getMinutes()}</p>
+                    <p className="bidInfo-text"><span className="autoInfo-text_title">Технический статус: </span>{this.props.bidinfo.bid_info.change_status_name}</p>
+                    <p className="bidInfo-text"><span className="autoInfo-text_title">Регион: </span>{this.props.bidinfo.bid_info.bid_region_name}</p>
+                    <p className="bidInfo-text"><span className="autoInfo-text_title">Город: </span>{this.props.bidinfo.bid_info.bid_city_name}</p>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
         <div className="chat-window">
-          <p className="entry-message"> <span> Оганнес </span><br/>Привет родной, как дела? </p>
-            <Messages messages={this.props.messages} className="message-block_example"/>
+            <Messages messages={this.props.bidinfo.messages} className="message-block_example"/>
         </div>
         <div className="calculator-and-chatTextarea">
           <Calculator />
@@ -55,3 +55,4 @@ class BidItemInfo extends React.Component {
 }
 
 export default BidItemInfo;
+//          <p className="entry-message"> <span> Оганнес </span><br/>Привет родной, как дела? </p>
