@@ -50,7 +50,7 @@ class BidItemInfo extends React.Component {
       </div>
     );
   } else {
-    return(<div className = "right-column_chat"><p>Выберите заявку</p></div>);
+    return(<div className = "right-column_chat"><p className="chooseTheBid">Выберите заявку</p></div>);
   }}
 }
 

@@ -1,10 +1,4 @@
 .carcas {
-    height: 850px;
-    margin: 0 auto;
-    margin-top: -10px;
-    border: 1px solid #c0c0c0;
-    border-top: none;
-    margin-bottom: 5px;
     .left-column_tabs {
         float: left;
         width: 35%;
@@ -21,7 +15,8 @@
             }
             .orderNumber {
                 font-size: 1.25em;
-                color: #40bcff;
+                color: rgb(0, 174, 255);
+                ;
             }
             .dateValue {
                 float: right;
@@ -31,9 +26,12 @@
             border: 1px solid #ddd;
             cursor: default;
             background: #FFEED9;
+            p {
+                margin: 5px;
+            }
             .orderNumber {
                 font-size: 1.25em;
-                color: #40bcff;
+                color: rgb(0, 174, 255);
             }
             .dateValue {
                 float: right;
@@ -41,13 +39,37 @@
         }
     }
     .right-column_chat {
+        .chooseTheBid {
+            font-size: 2.5em;
+            font-family: 'BlissPro';
+            text-align: center;
+            color: #ddd;
+            font-style: italic;
+        }
         .tab-details {
             p {
-                .orderNumber-details {}
-                .icon {}
-                .vinNumber {}
+                font-size: 1.1em;
+                font-family: 'BlissPro-Bold';
+                padding-top: 10px;
+                .orderNumber-details {
+                    color: rgb(0, 174, 255);
+                    font-size: 1.3em;
+                    text-decoration: none;
+                    margin-right: 15px;
+                }
+                .icon {
+                    margin: 0px 15px 0px 15px;
+                }
+                .vinNumber {
+                    color: #6E6E6E;
+                    font-size: 13px;
+                }
             }
-            .bidWriting-details {}
+            .bidWriting-details {
+                margin-left: 32%;
+                width: 500px;
+                overflow-wrap: break-word;
+            }
             .chat-window_table {
                 margin: 0 auto;
                 margin-top: 10px;
@@ -61,11 +83,14 @@
                     .autoInfo-text,
                     .bidInfo-text {
                         font-family: "BlissPro-Bold";
-                        font-size: 1.15em;
+                        font-size: 14px;
+                        padding: 0;
                     }
                     .autoInfo-text_title,
                     .bidInfo-text_title {
                         color: #B3B3B3;
+                        font-size: 14px;
+                        padding: 0;
                     }
                 }
             }

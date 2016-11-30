@@ -97,6 +97,10 @@ body {
     z-index: 50;
     width: 100%;
     padding: 0 20px;
+    padding-bottom: 15px;
+    border: 1px solid #eee;
+    border-bottom: none;
+    border-top: none;
 }
 
 .nav-tabs_active {
@@ -119,15 +123,6 @@ body {
     color: #4D4D4D;
 }
 
-.carcas {
-    height: 850px;
-    margin: 0 auto;
-    margin-top: -10px;
-    border: 1px solid #c0c0c0;
-    border-top: none;
-    margin-bottom: 5px;
-}
-
 .nav {
     background: #E6E6E6;
 }
@@ -137,5 +132,5 @@ body {
 }
 
 a:focus {
-    background: #E6E6E6 !important;
+    background: white !important;
 }
