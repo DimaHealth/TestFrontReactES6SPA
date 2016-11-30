@@ -1,10 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import BidItem from './Chat/biditem'
-import Infotable from './Chat/infotable'
-import Chatform from './Chat/chatform'
-import Calculator from './Chat/calculator'
-import Messages from './Chat/messages'
+import BidItemInfo from './Chat/biditeminfo'
 
 require('./chat/scss/chat.scss');
 
@@ -28,7 +25,7 @@ class ChatApp extends React.Component {
     }
 
     onBidItemSelect(e) {
-      this.setState({selected: e});
+      $.getJSON('./static/json/' + e + '.json', function(data) {this.setState({bidinfo: data, selected: e})}.bind(this));
     }
 
 	render() {
@@ -50,17 +47,7 @@ class ChatApp extends React.Component {
       <div className="left-column_tabs">
         {bidItems}
       </div>
-      <div className = "right-column_chat">
-        <Infotable />
-        <div className="chat-window">
-          <p className="entry-message"> <span> Оганнес </span><br/>Привет родной, как дела? </p>
-            <Messages messages={this.state.messages} className="message-block_example"/>
-        </div>
-        <div className="calculator-and-chatTextarea">
-          <Calculator />
-          <Chatform  onSubmit={this.handleSubmit}/>
-        </div>
-      </div>
+      <BidItemInfo messages={this.state.messages} bidinfo={this.state.bidinfo}/>
     </div>
 		);
     } else {
@@ -69,15 +56,6 @@ class ChatApp extends React.Component {
       <div className="left-column_tabs">
       </div>
       <div className = "right-column_chat">
-        <Infotable />
-        <div className="chat-window">
-          <p className="entry-message"> <span> Оганнес </span><br/>Привет родной, как дела? </p>
-            <Messages messages={this.state.messages} className="message-block_example"/>
-        </div>
-        <div className="calculator-and-chatTextarea">
-          <Calculator />
-          <Chatform  onSubmit={this.handleSubmit}/>
-        </div>
       </div>
     </div>
         
