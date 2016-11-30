@@ -29,6 +29,13 @@
             border: 1px solid #ddd;
             cursor: default;
             background: #FFEED9;
+            .orderNumber {
+                font-size: 1.25em;
+                color: #40bcff;
+            }
+            .dateValue {
+                float: right;
+            }
         }
     }
     .right-column_chat {
