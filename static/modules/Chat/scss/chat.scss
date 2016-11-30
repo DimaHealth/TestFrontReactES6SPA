@@ -6,11 +6,10 @@
     height: 838.4px;
     border: 1px solid #ddd;
     border-bottom: none;
+    overflow-y: auto;
 }
 
 .tab-styling {
-    margin: 7px;
-    padding: 7px;
     border: 1px solid #ddd;
     background: #FFEED9;
 }
@@ -195,4 +194,13 @@
 .entry-message span {
     font-weight: bold;
     font-size: 16pt;
+}
+
+.orderNumber {
+    font-size: 1.25em;
+    color: #40bcff;
+}
+
+.dateValue {
+    float: right;
 }

@@ -14,7 +14,7 @@ class BidItem extends React.Component {
         return (
             <div>
             <div className="tabs-first tab-styling">
-                <p> <span className="orderNumber">{this.props.bid.bid_id}</span>{' ' + this.props.bid.car.brand_name +' '+ this.props.bid.car.model_name}<span className="dateValue">{date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()}</span></p>
+                <p> <span className="orderNumber">{this.props.bid.bid_id}</span>{' ' + this.props.bid.car.brand_name +' '+ this.props.bid.car.model_name}<span className="dateValue">{date.getDate() + '.' + date.getMonth() + '.' + date.getFullYear()}</span></p>
                 <p className = "bidWriting"> {str} </p>
             </div>
             </div>
