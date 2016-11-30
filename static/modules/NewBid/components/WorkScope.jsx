@@ -27,7 +27,7 @@ class WorkScope extends React.Component {
                         </div>
                         <div className="worksRow-whattoDo_uploadPhoto">
                             <p className="worksRow-whattoDo_uploadPhotoBut">
-                                <input className="worksRow-uploadPhotoBut-uploadButTitle" type="file" name="photo" multiple accept="image/*" />
+                                <input className="worksRow-uploadPhotoBut_uploadButTitle" type="file" name="photo" multiple accept="image/*" />
                             </p>
                         </div>
                     </div>
