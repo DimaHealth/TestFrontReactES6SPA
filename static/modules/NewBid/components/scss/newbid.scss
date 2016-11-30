@@ -103,6 +103,7 @@
 .submitRow-info {
     float: left;
     margin-left: 15px;
+    color: darkblue;
 }
 
 .submitRow-dateofRem_titleSbmBtn {
@@ -135,7 +136,7 @@ textarea.todo[name="work"] {
 }
 
 textarea.todo[name="work"]:focus {
-    border-color: #4BC5FF;
+    border-color: #4BC5FF !important;
 }
 
 .chooseCar {
@@ -166,7 +167,6 @@ p {
 .button_blue {
     background: #40bcff;
     border-style: Solid;
-
     border-width: 1px;
     border-radius: 2px;
     -moz-border-radius: 2px;
@@ -178,4 +178,14 @@ p {
     cursor: pointer;
     transition: background, color, 150ms ease-out;
     vertical-align: middle;
+}
+
+.img-thumbnail {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+}
+
+.novis {
+    display: none;
 }
