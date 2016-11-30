@@ -7,7 +7,6 @@
         display: inline-block;
         border-bottom: 1px solid black;
         .autoRow-markModYear {
-            padding-left: 20px;
             border-left: 1px solid black;
             width: 70%;
             float: right;
@@ -59,22 +58,22 @@
                 margin-top: 25px;
             }
             .worksRow-whattoDo_photo {
-                width: 51.1%;
+                width: 61.18%;
                 float: left;
                 border: 1px solid black;
                 margin-bottom: 20px;
-                margin-left: 4.5%;
+                margin-left: 20px;
+                padding-bottom: 1.5px;
             }
             .worksRow-whattoDo_uploadPhotoBut {
                 padding-top: 9px;
                 padding-bottom: 7px;
             }
             .worksRow-whattoDo_uploadPhoto {
-                border-top: 1px solid black;
-                border-right: 1px solid black;
-                border-bottom: 1px solid black;
+                border: 1px solid black;
+                border-left: none;
                 float: right;
-                margin-right: 7.2%;
+                margin-right: 35px;
             }
             .worksRow-whattoDo_photoDesc {
                 float: right;

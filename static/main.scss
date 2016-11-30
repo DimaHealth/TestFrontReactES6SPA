@@ -112,6 +112,11 @@ body {
     background: #fff;
 }
 
+.nav-tabs li {
+    display: inline-block;
+    padding: 0;
+}
+
 .nav-tabs>li>a {
     position: relative;
     cursor: pointer;
@@ -120,6 +125,7 @@ body {
     font-size: 1.12em;
     line-height: 2.2em;
     color: #4D4D4D;
+    text-decoration: none;
 }
 
 .nav {
