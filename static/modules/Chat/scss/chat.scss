@@ -1,206 +1,149 @@
-.left-column_tabs {
-    float: left;
-    width: 35%;
-    margin: 10px;
-    padding: 5px;
-    height: 838.4px;
-    border: 1px solid #ddd;
-    border-bottom: none;
-    overflow-y: auto;
-}
-
-.tab-styling {
-    border: 1px solid #ddd;
-    background: #FFEED9;
-}
-
-.tab-styling:hover {
-    border: 1px solid white;
-    background-color: #181818;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    transition: .5s;
-    color: white;
-}
-
-.right-column_title {
-    width: 62%;
-    margin-left: 37.5%;
-    margin-top: 0.8%;
-    border: 1px solid black;
-}
-
-.tabTitle {
-    text-align: center;
-}
-
-.chat-window_table {
+.carcas {
+    height: 850px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 3px;
-    border-bottom: 1px solid #c0c0c0;
-}
-
-.autoInfo,
-.bidInfo {
-    border-bottom: none;
-    padding: 0px 5px 0px 5px;
-    width: 50%;
-}
-
-.autoInfo-text,
-.bidInfo-text {
-    font-family: "BlissPro-Bold";
-    font-size: 1.15em;
-}
-
-.autoInfo-text_title,
-.bidInfo-text_title {
-    color: #B3B3B3;
-}
-
-.chat-window {
-    width: 62%;
-    height: 515px;
-    margin-left: 37.5%;
-    overflow: auto;
-    margin-top: -3px;
-}
-
-.message-block_example {
-    border: 1px solid black;
-    margin: 5px;
-    padding: 10px;
-    width: 70%;
-}
-
-.input-calculator_form {
-    margin-top: -50px;
-    width: 300px;
-    border: 1px solid black;
-}
-
-.calculator-body {
-    width: 50%;
-    margin-top: 250px;
-}
-
-.calcInput {
-    width: 70px;
-}
-
-.chat-message_block {
-    margin-top: -125px;
-}
-
-.calculator-and-chatTextarea {
-    width: 62.5%;
-    margin-left: 38%;
-    margin-top: -20%;
-}
-
-.go {
-    margin-left: 627px;
-    margin-top: 10px;
-    background: #40bcff;
-    padding: 4px 25px 4px 25px;
-    border: 1px solid #40bcff;
-    border-radius: 3px;
-    transition: .6s;
-    -webkit-transition: .6s;
-    font-family: 'BlissPro';
-    color: white;
-}
-
-.go:hover {
-    transition: .6s;
-    -webkit-transition: .6s;
-    color: white;
-    background: black;
-    border: 1px solid black;
-}
-
-.resultRow input {
-    width: 100px;
-}
-
-.input-form {
-    margin-top: 4px;
-    margin-right: 30px;
-    overflow: auto;
-    resize: none;
-    width: 300px;
-    height: 120px;
-    background: #f6f6f6;
-    border: 1px solid #cecece;
-    border-radius: 8px 0 0 0;
-    padding: 8px 0 8px 10px;
-    float: right;
-}
-
-.input-form:focus {
-    transition: .6s;
-}
-
-.inp {
-    width: 150px;
-    font-size: 13px;
-    padding: 6px 0 4px 10px;
-    border: 1px solid #cecece;
-    background: #F6F6f6;
-    outline: none;
-    margin-right: 10px;
-}
-
-.sendMessage {
-    margin-left: 160px;
-    margin-top: 3px;
-    padding: 5px 10px 5px 10px;
-    border: 1px dotted black;
-    background: transparent;
-    -webkit-transition: .7s;
-    -moz-transition: .7s;
-    transition: .7s;
-}
-
-.sendMessage:hover {
-    background: black;
-    color: white;
-    -webkit-transition: .7s;
-    -moz-transition: .7s;
-    transition: .7s;
-}
-
-.send-messages {
-    border-radius: 3px;
-    width: 370px !important;
-    padding: 15px 10px 15px 10px;
-    font-weight: bold;
-    overflow-wrap: break-word;
-    text-align: left;
-    background: #fff1e3;
-    float: right;
-    color: #6E6E6E;
-}
-
-.entry-message {
-    padding: 5px 10px 5px 10px;
-    width: 350px !important;
-    text-align: left;
-    overflow-wrap: break-word;
-    background: #E1F7FF;
-}
-
-.entry-message span {
-    font-weight: bold;
-    font-size: 16pt;
-}
-
-.orderNumber {
-    font-size: 1.25em;
-    color: #40bcff;
-}
-
-.dateValue {
-    float: right;
+    margin-top: -10px;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+    margin-bottom: 5px;
+    .left-column_tabs {
+        float: left;
+        width: 35%;
+        margin: 10px;
+        padding: 5px;
+        height: 838.4px;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        overflow-y: auto;
+        .tab-styling {
+            border: 1px solid #ddd;
+            .orderNumber {
+                font-size: 1.25em;
+                color: #40bcff;
+            }
+            .dateValue {
+                float: right;
+            }
+        }
+        .tab-styling_selected {
+            background: #FFEED9;
+        }
+    }
+    .right-column_chat {
+        .tab-details {
+            p {
+                .orderNumber-details {}
+                .icon {}
+                .vinNumber {}
+            }
+            .bidWriting-details {}
+            .chat-window_table {
+                margin: 0 auto;
+                margin-top: 10px;
+                margin-bottom: 3px;
+                border-bottom: 1px solid #c0c0c0;
+                .autoInfo,
+                .bidInfo {
+                    border-bottom: none;
+                    padding: 0px 5px 0px 5px;
+                    width: 50%;
+                    .autoInfo-text,
+                    .bidInfo-text {
+                        font-family: "BlissPro-Bold";
+                        font-size: 1.15em;
+                    }
+                    .autoInfo-text_title,
+                    .bidInfo-text_title {
+                        color: #B3B3B3;
+                    }
+                }
+            }
+        }
+        .chat-window {
+            width: 62%;
+            height: 515px;
+            margin-left: 37.5%;
+            overflow: auto;
+            margin-top: -3px;
+            .entry-message {
+                padding: 5px 10px 5px 10px;
+                width: 350px !important;
+                text-align: left;
+                overflow-wrap: break-word;
+                background: #E1F7FF;
+                span {
+                    font-weight: bold;
+                    font-size: 16pt;
+                }
+            }
+            div {
+                .send-messages {
+                    border-radius: 3px;
+                    width: 370px !important;
+                    padding: 15px 10px 15px 10px;
+                    font-weight: bold;
+                    overflow-wrap: break-word;
+                    text-align: left;
+                    background: #fff1e3;
+                    float: right;
+                    color: #6E6E6E;
+                }
+            }
+        }
+        .calculator-and-chatTextarea {
+            width: 62.5%;
+            margin-left: 38%;
+            margin-top: -20%;
+            .calculator-body {
+                width: 50%;
+                margin-top: 250px;
+                .inp {
+                    width: 150px;
+                    font-size: 13px;
+                    padding: 6px 0 4px 10px;
+                    border: 1px solid #cecece;
+                    background: #F6F6f6;
+                    outline: none;
+                    margin-right: 10px;
+                }
+            }
+            .chat-message_block {
+                margin-top: -125px;
+                .input-form {
+                    margin-top: 4px;
+                    margin-right: 30px;
+                    overflow: auto;
+                    resize: none;
+                    width: 300px;
+                    height: 120px;
+                    background: #f6f6f6;
+                    border: 1px solid #cecece;
+                    border-radius: 8px 0 0 0;
+                    padding: 8px 0 8px 10px;
+                    float: right;
+                    &:focus {
+                        transition: .6s;
+                    }
+                }
+                .go {
+                    margin-left: 627px;
+                    margin-top: 10px;
+                    background: #40bcff;
+                    padding: 4px 25px 4px 25px;
+                    border: 1px solid #40bcff;
+                    border-radius: 3px;
+                    transition: .6s;
+                    -webkit-transition: .6s;
+                    font-family: 'BlissPro';
+                    color: white;
+                    &:hover {
+                        transition: .6s;
+                        -webkit-transition: .6s;
+                        color: white;
+                        background: black;
+                        border: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
 }
