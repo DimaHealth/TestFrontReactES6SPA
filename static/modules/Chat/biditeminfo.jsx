@@ -45,7 +45,7 @@ class BidItemInfo extends React.Component {
         </div>
         <div className="calculator-and-chatTextarea">
           <Calculator />
-          <Chatform  onSubmit={this.props.onSendMessage}/>
+          <Chatform  onSendMessage={this.props.onSendMessage}/>
         </div>
       </div>
     );

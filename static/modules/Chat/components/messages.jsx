@@ -14,7 +14,7 @@ class Messages extends Component {
         return (<p className="send-messages" key={key}> <span> {message.user_name} </span><br/>{message.message}</p>)
       }
     })
-    console.log(messages);
+//    console.log(messages);
     return (<div>{messages}</div>);
     } else{
       return null

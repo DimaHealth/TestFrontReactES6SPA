@@ -5,10 +5,55 @@ class WorkScope extends React.Component {
     constructor(props) {
         super(props);
         this.handleMessageChange = this.handleMessageChange.bind(this);
+        this.handleAddImage = this.handleAddImage.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleMessageChange(event) {
         this.props.onMessageChange(event.target.value);
+    }
+
+    handleClick(){
+      var reader = new FileReader();
+      let input = document.createElement("INPUT");
+      input.type = "file";
+      input.setAttribute('multiple','');
+      input.onchange = this.handleAddImage;
+//      input.addEventListener('change',this.handleAddImage,false);
+      var click = document.createEvent("MouseEvents");
+      click.initEvent("click", true, true);
+      var src = input.dispatchEvent(click);
+      console.log(reader);
+
+    }
+
+    handleAddImage(evt) {
+    var files = evt.target.files; // FileList object
+    document.getElementById('outputMulti').innerHTML = "";
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Проверка, что файл является изображением
+      if (!f.type.match('image.*')) {
+        alert("Только изображения....");
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Создание миниатюр
+          var span = document.createElement('span');
+          span.innerHTML = ['<img class="img-thumbnail" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+          document.getElementById('outputMulti').insertBefore(span, null);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+
     }
 
     render() {
@@ -27,13 +72,15 @@ class WorkScope extends React.Component {
                         </div>
                         <div className="worksRow-whattoDo_uploadPhoto">
                             <p className="worksRow-whattoDo_uploadPhotoBut">
-                                <input className="worksRow-uploadPhotoBut_uploadButTitle" type="file" name="photo" multiple accept="image/*" />
+                                <div className="worksRow-uploadPhotoBut_uploadButTitle" onClick={this.handleClick}>Добавить</div>
                             </p>
                         </div>
                     </div>
+                            <div id='outputMulti'/>
                 </div>
             </div>
         );
     }
 }
 export default WorkScope;
+//                                <input className="worksRow-uploadPhotoBut_uploadButTitle" type="file" name="photo" multiple accept="image/*" />
