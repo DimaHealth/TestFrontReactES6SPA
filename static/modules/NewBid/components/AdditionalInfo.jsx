@@ -17,7 +17,9 @@ class AdditionalInfo extends React.Component {
     }
 
     handleChange(e) {
-        this.props.onAddInfoChange(e.format('DD/MM/YYYY'));
+        if(e){
+          this.props.onAddInfoChange(e.format('DD/MM/YYYY'));
+        }
         this.setState({ chosenDate: e });
     }
 
