@@ -9,8 +9,7 @@ class ChatApp extends React.Component {
     constructor(props) {
         super(props);
         this.state = { messages: [], bids: null, selected: null };
-//        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.onSendMessage = this.onSendMessage.bind(this);
         this.onBidItemSelect = this.onBidItemSelect.bind(this);
 
     }
@@ -20,8 +19,11 @@ class ChatApp extends React.Component {
 
     }
 
-    handleSubmit(e) {
-       this.setState({messages: e});
+    onSendMessage(e) {
+      let data = this.state.bidinfo;
+      console.log(e);
+      data.messages.push(e);
+      this.setState({bidinfo: data});
     }
 
     onBidItemSelect(e) {
@@ -30,10 +32,6 @@ class ChatApp extends React.Component {
 
 	render() {
     if (this.state.bids){
-    //   console.log(this.state.bids);
-
-    // var bidItems = this.state.bids.map((bid, key) => {return <BidItem bid={bid} key={key} onClick={this.onBidItemSelect} style = "tab-styling_selected"/>});
-          
 
     var bidItems = this.state.bids.map((bid, key) => {
       if (bid.bid_id==this.state.selected){
@@ -47,7 +45,7 @@ class ChatApp extends React.Component {
       <div className="left-column_tabs">
         {bidItems}
       </div>
-      <BidItemInfo messages={this.state.messages} bidinfo={this.state.bidinfo}/>
+      <BidItemInfo messages={this.state.messages} onSendMessage={this.onSendMessage} bidinfo={this.state.bidinfo}/>
     </div>
 		);
     } else {

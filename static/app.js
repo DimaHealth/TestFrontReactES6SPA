@@ -49,4 +49,4 @@ render((
       <Route path="listofbids" component={Listofbids}/>
     </Route>
   </Router>
-), document.body)
+), document.getElementById('appRoot'))

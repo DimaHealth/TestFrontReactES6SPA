@@ -5,10 +5,7 @@ import moment from 'moment'
 class Chatform extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-      	value: '',
-		message: [{m:'', date:''}]
-    };
+		this.state = {value: ''};//, message: [{m:'', date:''}]
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
@@ -17,11 +14,10 @@ class Chatform extends React.Component {
 		this.setState({value: event.target.value});
 	}
 	handleSubmit(event) {
-    let {message, value} = this.state;
-	message.push({m:value, date:moment().locale("ru").format('DD.MM.YY, h:mm:ss')});
-	this.props.onSubmit(message);
-	console.log(message);
-	this.setState({message, value: ''});
+//	message.push({m:value, date:moment().locale("ru").format('DD.MM.YY, h:mm:ss')});
+	this.props.onSubmit({message: this.state.value, user_name:'Автосервис'});
+	console.log(event.target);
+	this.setState({value: ''});
 }
 	render() {
 		return (
@@ -37,4 +33,3 @@ class Chatform extends React.Component {
 	}
 }
 export default Chatform;
-//        {this.state.message.map((message, id) => <p key={id} className="sweet">{message}</p>)}
