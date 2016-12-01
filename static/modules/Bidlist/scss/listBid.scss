@@ -18,6 +18,7 @@
     .listBidCarcas-bidTable {
         margin: 0 auto;
         font-weight: 500;
+        border-spacing: 0px;
         .listBidCarcas-bidTable_headTable {
             font-weight: bold;
             background: #E6E6E6;
@@ -83,11 +84,6 @@
                     color: #fff;
                 }
             }
-            .table-row:hover {
-                transition: 0.5s ease;
-                background: #f9e9d2;
-                cursor: pointer;
-            }
             .details {
                 transition: none;
                 background: none;
@@ -101,7 +97,10 @@
                 border-bottom: 1px solid #E6E6E6;
             }
         }
+        .table-row:hover {
+            transition: 0.5s ease;
+            background: #f9e9d2;
+            cursor: pointer;
+        }
     }
 }
-
-//071 312 27 02
