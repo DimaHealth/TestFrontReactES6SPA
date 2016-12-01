@@ -15,11 +15,11 @@ class WorkScope extends React.Component {
 
     handleClick(){
 //      var reader = new FileReader();
-      let input = document.createElement("INPUT");
+      let input = document.createElement("input");
+//      input.addEventListener('change',this.handleAddImage,false);
+      input.onchange = this.handleAddImage;
       input.type = "file";
       input.setAttribute('multiple','');
-//      input.onchange = this.handleAddImage;
-      input.addEventListener('change',this.handleAddImage,false);
       var click = document.createEvent("MouseEvents");
       click.initEvent("click", true, true);
       input.dispatchEvent(click);
@@ -29,19 +29,19 @@ class WorkScope extends React.Component {
 
     handleAddImage(evt) {
     var files = evt.target.files; // FileList object
+    let lfiles={};
     document.getElementById('outputMulti').innerHTML = "";
     for (var i = 0, f; f = files[i]; i++) {
 
       // Проверка, что файл является изображением
       if (!f.type.match('image.*')) {
-        alert("Только изображения....");
-      }
+        alert("Выбирите изображения....");
+      } else{
 
       var reader = new FileReader();
 
       // Closure to capture the file information.
-      reader.onload = (function(theFile) {
-        return function(e) {
+      reader.onload = ((theFile) => {return (e) => {
           // Создание миниатюр
           var span = document.createElement('span');
           span.innerHTML = ['<img class="img-thumbnail" src="', e.target.result,
@@ -50,10 +50,10 @@ class WorkScope extends React.Component {
         };
       })(f);
 
-      console.log(files);
       // Read in the image file as a data URL.
       reader.readAsDataURL(f);
-    }
+      console.log(f);
+    }}
 
     }
 
