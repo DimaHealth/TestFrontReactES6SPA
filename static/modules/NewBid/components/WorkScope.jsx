@@ -14,16 +14,16 @@ class WorkScope extends React.Component {
     }
 
     handleClick(){
-      var reader = new FileReader();
+//      var reader = new FileReader();
       let input = document.createElement("INPUT");
       input.type = "file";
       input.setAttribute('multiple','');
-      input.onchange = this.handleAddImage;
-//      input.addEventListener('change',this.handleAddImage,false);
+//      input.onchange = this.handleAddImage;
+      input.addEventListener('change',this.handleAddImage,false);
       var click = document.createEvent("MouseEvents");
       click.initEvent("click", true, true);
-      var src = input.dispatchEvent(click);
-      console.log(reader);
+      input.dispatchEvent(click);
+//      console.log(reader);
 
     }
 
@@ -50,6 +50,7 @@ class WorkScope extends React.Component {
         };
       })(f);
 
+      console.log(files);
       // Read in the image file as a data URL.
       reader.readAsDataURL(f);
     }
@@ -76,8 +77,8 @@ class WorkScope extends React.Component {
                             </p>
                         </div>
                     </div>
-                            <div id='outputMulti'/>
                 </div>
+                            <div id='outputMulti'/>
             </div>
         );
     }
