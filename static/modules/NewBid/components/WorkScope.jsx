@@ -29,7 +29,7 @@ class WorkScope extends React.Component {
 
     handleAddImage(evt) {
     var files = evt.target.files; // FileList object
-    let lfiles={};
+    var lfiles=[];
     document.getElementById('outputMulti').innerHTML = "";
     for (var i = 0, f; f = files[i]; i++) {
 
@@ -52,9 +52,10 @@ class WorkScope extends React.Component {
 
       // Read in the image file as a data URL.
       reader.readAsDataURL(f);
+      lfiles.push(f.name);
       console.log(f);
     }}
-
+    if(lfiles){this.props.onFileLoad(lfiles)};
     }
 
     render() {

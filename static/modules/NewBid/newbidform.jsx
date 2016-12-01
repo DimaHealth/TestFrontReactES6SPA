@@ -15,6 +15,7 @@ import Select from 'react-select'
         this.onMessageChange = this.onMessageChange.bind(this);
         this.onAddInfoChange = this.onAddInfoChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+        this.onFileLoad = this.onFileLoad.bind(this);
     }
 
     onCarChange(x, y, z){
@@ -29,6 +30,10 @@ import Select from 'react-select'
         this.setState({desiredDate: e});
     }
 
+    onFileLoad(e) {
+        this.setState({loadedFiles: e});
+    }
+
     onSubmit(e) {
         console.log(this.state);
         e.preventDefault();
@@ -39,7 +44,7 @@ import Select from 'react-select'
         return (
             <form className="rightColumn" action='' onSubmit = {this.onSubmit}>
                 <ChooseCar className="chooseCar" onCarChange = {this.onCarChange}/>
-                <WorkScope onMessageChange = {this.onMessageChange}/>
+                <WorkScope onMessageChange = {this.onMessageChange} onFileLoad={this.onFileLoad}/>
             <div className="submitRow">
                 <AdditionalInfo onAddInfoChange = {this.onAddInfoChange}/>
                 <button className="submitRow-sbmBut" type="submit">Отправить</button>
