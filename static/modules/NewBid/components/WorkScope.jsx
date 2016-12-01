@@ -44,7 +44,7 @@ class WorkScope extends React.Component {
       reader.onload = ((theFile) => {return (e) => {
           // Создание миниатюр
           var span = document.createElement('span');
-          span.innerHTML = ['<img class="img-thumbnail" src="', e.target.result,
+          span.innerHTML = ['<img class="img-thumbnail preview" src="', e.target.result,
                             '" title="', escape(theFile.name), '"/>'].join('');
           document.getElementById('outputMulti').insertBefore(span, null);
         };
@@ -77,9 +77,11 @@ class WorkScope extends React.Component {
                                 <div className="worksRow-uploadPhotoBut_uploadButTitle" onClick={this.handleClick}>Добавить</div>
                             </p>
                         </div>
+                        <div id='outputMulti'></div>
                     </div>
+                            
                 </div>
-                            <div id='outputMulti'/>
+                
             </div>
         );
     }
