@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ChooseCar from './components/choosecar'
-import WorkScope from './components/workscope'
-import AdditionalInfo from './components/additionalinfo'
+import ChooseCar from './components/ChooseCar'
+import WorkScope from './components/WorkScope'
+import AdditionalInfo from './components/AdditionalInfo'
 import moment from 'moment'
 import Select from 'react-select'
 

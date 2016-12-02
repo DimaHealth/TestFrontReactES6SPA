@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Filtertable from './bidlist/filtertable'
-import Bidtable from './bidlist/bidtable'
+import Filtertable from './Bidlist/filtertable'
+import Bidtable from './Bidlist/bidtable'
 
-require('./bidlist/scss/listbid.scss');
+require('./Bidlist/scss/listBid.scss');
 
 class BidkiList extends React.Component {
     constructor(props) {

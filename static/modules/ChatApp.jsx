@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import BidItem from './Chat/biditem'
 import BidItemInfo from './Chat/biditeminfo'
 
-require('./chat/scss/chat.scss');
+require('./Chat/scss/chat.scss');
 
 class ChatApp extends React.Component {
     constructor(props) {

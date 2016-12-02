@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router'
-import ChatApp from './modules/chatapp'
-import NewBidApp from './modules/newbidapp'
-import BidkiList from './modules/bidlistapp'
+import ChatApp from './modules/ChatApp'
+import NewBidApp from './modules/NewBidApp'
+import BidkiList from './modules/BidListApp'
 
 
 
